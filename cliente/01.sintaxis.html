@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sintaxis</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    
+    // Interrumpe la carga de la página y sale en blanco:
+    // confirm('¿Desea continuar?')
+    
+    // Descomenta la línea para comprobarlo:
+    // alert('Hola mundo desde head');
+
+  </script>
 </head>
 <body>
   <h1>Sintaxis</h1>
@@ -15,14 +24,94 @@
 
   <p>Siempre usamos ECMAScript posterior a 2016.</p>
 
+  <h2>Javascript Output</h2>
+
+  <h3>innerHTML</h3>
+
+  <p id="p1">Escribe algo aquí.</p>
+  <p id="p2">Escribe algo aquí.</p>
+  
+  <script>
+    // Buscamos el elemento con id="p1" y le cambiamos el contenido:
+    document.getElementById("p1").innerHTML = "<a href='#'>Este p es strong! -> elemento p1</a>"
+    // Buscamos el elemento con id="p2" y le cambiamos el contenido:
+    document.getElementById("p2").innerHTML = "<strong>Este p2 es strong!</strong> p2"
+    // Probad a cambiar las etiquetas manteniendo las comillas: " ... "
+  </script>
+
+  <h3>document.write()</h3>
+  <script>
+    document.write("<h4 style='text-decoration: underline;'>Este h3 es escrito con document.write()</h4>")
+  </script>
+
+  <h3>alert</h3>
+  <script>
+    // Descomentar para probar:
+    // alert('Hola mundo desde body');
+  </script>
+
+  <h3>console.log()</h3>
+  <script>
+    let x = 5;
+    x = x + 2;
+    // Esperamos que x sea 7:
+    console.log('El valor de x es:', x);
+  </script>
+
+  <h2>Declaraciones</h2>
+  <script>
+    // Si ponemos ; no hace falta saltar línea:
+    var a = 5; var abc = "algo";
+    let b = 10;
+    let d, e, f=1;
+    // d y e son undefined pero f vale 1:
+    console.log(d, e, f);
+  </script>
+
+  <script>
+    // Si no ponemos ; hay que saltar línea:
+    var a
+    var g = 1
+    console.log(a, g)
+  </script>
+
+  <h3>Espacios en blanco</h3>
+
+  <script>
+    // Se puede hacer esto:
+    let t       = 5;
+    let pepito  = "Pepito";
+    
+    // En la medida de lo posible hay que usar variables o línea no demasiado largas:
+    
+    /* let miVariableSuperLargaEnJS = document.getElementById("miIdSuperLargoEnJS")
+                                    .innerHTML;*/
+  </script>
+
+
+  <h3>Sintaxis</h3>
+
+  <script>
+    // Crear variables:
+    var n;
+    let m;
+
+    // Usar variables:
+    n = 5;
+    m = 6;
+    let z = n + m;
+
+    console.log('El valor de z es:', z);
+  </script>
+
   <script>
     // Comentario de una línea
     /* Comentario de varias líneas */
     console.log('Hola mundo');
-
-    
-
   </script>
+
+  <!-- Javascript antes de cierre de body -->
   <script src="01.sintaxis.js"></script>
+  <!-- Pon el JS aquí ^ -->
 </body>
 </html>
