@@ -27,7 +27,7 @@ Diagrama de donde se puede usar Javascript (cliente o servidor)
 
   1. Sintáxis de JS (comentarios, punto y coma, mayúsculas y minúsculas, sensibilidad a mayúsculas y minúsculas) en [01.sintaxis.html](cliente/01.sintaxis.html)
   2. Variables (declaraciones, camelCase, let, const, var)
-  3. Operadores (aritméticos, de asignación, de comparación, lógicos, ternario)
+  3. Operadores (aritméticos, de asignación, de comparación, lógicos, ternario) [02.variables.html](cliente/02.variables.html)
   4. Tipos primitivos (string, number, boolean, null, undefined, symbol)
   5. Funciones en JS (declaración, expresión, arrow function, parámetros, argumentos, return)
   6. Estructuras de datos (array, object, date, math, JSON)
