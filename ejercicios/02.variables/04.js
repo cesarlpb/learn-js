@@ -30,3 +30,6 @@ console.log("Promedio:", promedio);
 // Escribimos los datos en el HTML:
 document.getElementById("ej-4-inputs").innerText = "Números: " + num1 + ", " + num2 + ", " + num3;
 document.getElementById("ej-4-output").innerText = "Promedio: " + promedio;
+
+// Probad números: 10, 20, 30
+// Probad números: 0.1, 0.2, 0.3
