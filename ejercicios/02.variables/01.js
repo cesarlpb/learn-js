@@ -19,6 +19,8 @@ output: 220
 
 */
 
+console.log("--- Ejercicio 01 ---");
+
 // Caso 1:
 
 let precio = 100; // €
