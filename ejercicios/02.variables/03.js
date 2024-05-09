@@ -12,6 +12,7 @@ output: mensaje -> "Hola, Pepe"
 
 */
 
+console.log("--- Ejercicio 03 ---");
 // Pedimos el nombre del usuario:
 let nombre = prompt("¿Cómo te llamas?");
 let saludo = "Hola, " + nombre;
