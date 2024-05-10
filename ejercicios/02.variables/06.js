@@ -18,6 +18,9 @@ segundos
 
 console.log("--- Ejercicio 06 ---");
 
+const SEGUNDOS_EN_HORA = 60 * 60;
+const SEGUNDOS_EN_MINUTO = 60;
+
 // Pedimos datos al usuario:
 let horas = Number(prompt("Introduce el número de horas a convertir:"));
 let minutos = Number(prompt("Introduce los minutos a convertir:"));
@@ -25,7 +28,7 @@ let minutos = Number(prompt("Introduce los minutos a convertir:"));
 // Comprobamos que los números los recibimos bien:
 // console.log(horas, minutos);
 
-let segundos = horas * 3600 + minutos * 60;
+let segundos = horas * SEGUNDOS_EN_HORA + minutos * SEGUNDOS_EN_MINUTO;
 alert("Los segundos son: " + segundos);
 
 console.log("La respuesta sale por alert()");
