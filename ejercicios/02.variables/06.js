@@ -29,6 +29,9 @@ let minutos = Number(prompt("Introduce los minutos a convertir:"));
 // console.log(horas, minutos);
 
 let segundos = horas * SEGUNDOS_EN_HORA + minutos * SEGUNDOS_EN_MINUTO;
-alert("Los segundos son: " + segundos);
+let msg = `Los segundos son: 
+${segundos} s`;
+
+alert(msg);
 
 console.log("La respuesta sale por alert()");
