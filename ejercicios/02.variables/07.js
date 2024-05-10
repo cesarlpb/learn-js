@@ -24,3 +24,17 @@ decenas = 7
 unidades = 8
 
 */
+
+console.log("--- Ejercicio 07 ---");
+
+// Usamos parseInt() para que el número sea entero (sin decimales):
+let num = Number.parseInt(prompt("Introduce un número entre 10 y 99:"));
+// Redondear a entero las decenas antes de calcular unidades:
+let decenas = Number.parseInt(num / 10);
+let unidades = num - 10 * decenas;
+
+console.log(num, decenas, unidades);
+
+// Colocamos los datos en elementos del documento HTML:
+document.getElementById("ej-7-input").innerText = `Número: ${num}`;
+document.getElementById("ej-7-outputs").innerText = `Decenas: ${decenas}, unidades: ${unidades}`;
