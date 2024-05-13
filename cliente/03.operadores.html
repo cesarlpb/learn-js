@@ -8,10 +8,110 @@
 </head>
 <body>
   <h1>Operadores</h1>
+  <p>Los operadores son símbolos reservados para realizar ciertas manipulaciones, cálculos, en general <em>operaciones</em> sobre los datos de un programa.</p>
+  <pre><code>
+    let x = 1 + 1; // los unos son operandos y el + es el operador
+  </code></pre>
+  <p>De la misma forma, tenemos más operadores aritméticos.</p>
 
-  <ul>
-    <li>Operadores Aritméticos</li>
+  <img src="diagramas/operadores_1.png" alt="diagrama 01" width="300" style="display: block; margin: 0 auto;">
+
+  <ul style="list-style-type: none; padding-left: 0;">
+    
+    <li>
+      <h2>Operadores Aritméticos</h2>
+    </li>
     <p>Son los operadores para realizar cálculos numéricos: <code>+ - * /</code>, etc.</p>
+
+    <div class="table-container">
+      <table class="">
+        <tbody>
+          <tr>
+            <th style="width:25%">Operador</th>
+            <th>Descripción</th>
+            <th style="width: 50%;">Ejemplo</th>
+          </tr>
+          <tr>
+            <td>+</td>
+            <td>Suma</td>
+            <td>
+              <code>a + b</code>
+            </td>
+          </tr>
+          <tr>
+            <td>-</td>
+            <td>Resta</td>
+            <td>
+              <code>a - b</code>
+            </td>
+          </tr>
+          <tr>
+            <td>*</td>
+            <td>Multiplicación</td>
+            <td>
+              <code>a * b</code>
+            </td>
+          </tr>
+          <tr>
+            <td>**</td>
+            <td>Exponente (ES2016) 
+              <br><br>
+              <code>x^y -> x ** y</code>
+            </td>
+            <td>
+              <code>x * x -> x ** 2</code>
+              <br><br>
+              <code>2 ** 3 -> 2 * 2 * 2 -> 8</code>
+            </td>
+          </tr>
+          <tr>
+            <td>/</td>
+            <td>División</td>
+            <td>
+              <code>a / b</code>
+              <br><br>
+              <strong>b no debe ser 0 -> Infinity</strong>
+            </td>
+          </tr>
+          <tr>
+            <td>%</td>
+            <td>Módulo (Resto de divisón) <br>
+              <code>5/3 = 1, R = 2</code>
+            </td>
+            <td>
+              <code>5 % 3 -> 2</code>
+              <br><br>
+              <strong>2 es el resto de la división entera</strong>
+              <br><br>
+              <code>4 % 2 -> 0</code> (división exacta)
+            </td>
+          </tr>
+          <tr>
+            <td>++</td>
+            <td>Incremento: aumenta en 1 el valor</td>
+            <td style="text-align: left;">
+              <pre><code>
+    let x = 1;
+    x++; 
+    // ahora x vale 2
+              </code></pre>
+            </td>
+          </tr>
+          <tr>
+            <td>--</td>
+            <td>Decremento: disminuye en 1 el valor</td>
+            <td style="text-align: left;">
+              <pre><code>
+    let x = 3;
+    x--; 
+    // ahora x vale 2
+              </code></pre>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
     <h3>Proyecto de Calculadora</h3>
     <div style="margin-bottom: 1rem;">
       <a href="#">Calculadora</a>
