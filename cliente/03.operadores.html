@@ -117,6 +117,114 @@
       <a href="#">Calculadora</a>
     </div>
     <li>Operadores de Asignación</li>
+    <p>Son los operadores que realizan una operación aritmética y además asignan el resultado de dicha operación a la variable. <strong>Si bien la notación puede ser más corta, no siempre escribir menos es más claro.</strong></p>
+    <div class="table-container">
+      <table class="">
+        <tbody>
+          <tr>
+            <th style="width:20%">Operador</th>
+            <th style="width: 40%;">Ejemplo</th>
+            <th style="width: 40%;">Equivale a:</th>
+          </tr>
+          <tr>
+            <td>
+            Asignación:
+            <br><br>
+              =
+            </td>
+            <td>x = y</td>
+            <td>x = y</td>
+          </tr>
+          <tr>
+            <td>
+            Suma con asignación:
+            <br><br>
+              +=
+            </td>
+            <td>
+              x += y
+              <pre>
+                <code>
+    let x = 1; // x vale 1 
+    x += 2;   // x vale 3</code>
+              </pre>
+            </td>
+            <td>x = x + y</td>
+          </tr>
+          <tr>
+            <td>
+              Resta con asignación:
+              <br><br>
+              -=</td>
+            <td>x -= y</td>
+            <td>x = x - y</td>
+          </tr>
+          <tr>
+            <td>
+              Multiplicación con asignación:
+              <br><br>
+              *=</td>
+            <td style="text-align: left;">
+              <span style="display: inline-block; text-align: center; width: 100%;">x *= y</span>
+              <pre><code>
+    let x = 1; // x vale 1
+    x *= 2;  // x vale 1*2 -> 2
+    x *= 0; // x vale 0
+    x *= 100 // x vale 0              
+              </code></pre>
+            </td>
+            <td>x = x * y</td>
+          </tr>
+          <tr>
+            <td>
+            División y asignación:
+            <br><br>
+              /=
+            </td>
+            <td>x /= y
+              <br><br>
+            <strong>nótese que no está definido 
+              <br>
+              dividir por cero</strong>
+
+            </td>
+            <td>x = x / y</td>
+          </tr>
+          <tr>
+            <td>
+            Resto y asignación:
+            <br><br>  
+              %=
+            </td>
+            <td style="text-align: left;">
+              <span style="display: inline-block; width: 100%; text-align: center;">x %= y</span>
+            
+            <pre><code>
+    let x = 10; // x vale 10
+    x = 10 % 3; // x vale 10 / 3 -> 3 resto 1 => 1           
+            </code></pre>
+
+            </td>
+            <td>x = x % y</td>
+          </tr>
+          <tr>
+            <td>
+              Exponenciación y asignación:
+              <br><br>
+              **=
+            </td>
+            <td style="text-align: left;">
+              <span style="display: inline-block; text-align: center; width: 100%;">x **= y</span>
+            <pre><code>
+    let x = 2; let y = 3; 2 ** 3 -> 8
+    x **= y; // x vale 8              
+            </code></pre>
+            </td>
+            <td>x = x ** y</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     <li>Operadores de Comparación</li>
     <li>Operadores de Strings</li>
     <li>Operadores Lógicos</li>
