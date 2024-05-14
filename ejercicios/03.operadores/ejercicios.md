@@ -1,5 +1,7 @@
 # Ejercicios de Operadores
 
+![alt text](image.png)
+
 ## Operadores Aritméticos
 
 1. Calcula el resultado de las expresiones:
