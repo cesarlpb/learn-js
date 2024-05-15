@@ -139,7 +139,7 @@ Añade una explicación del resultado de cada comparación.
 - `""`
 - `"Hola"`
 - `1+1=2`
-- 
+
 ```js
 const diasDeLaSemana = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
 const diaDeLaSemana = diasDeLaSemana[new Date().getDay()];
