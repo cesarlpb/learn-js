@@ -94,7 +94,7 @@ resultado_1 != resultado_2 // true
 Añade una explicación del resultado de cada comparación.
 
 
-2. Haz una comparación con la variable edad de un usuario de tipo `Number` y entero:
+2. Haz una comparación con la variable `edad` de un usuario de tipo `Number` y entero:
 
 - Es mayor de 18
 - Es menor que 18
