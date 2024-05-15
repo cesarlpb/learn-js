@@ -14,7 +14,7 @@ Este apartado tiene operaciones numéricas que hay que calcular. Dependiendo de 
 
 ![alt text](image-2.png)
 
-- **Notación científica:** `10` elevado a `3` y `10` elevado a `-3` -> ¿qué observas?
+1.5. **Notación científica:** `10` elevado a `3` y `10` elevado a `-3` -> ¿qué observas?
 
 2. **Área del triángulo:** Encuentra el área de un triángulo con base 6 y altura 4. -> ¿Cómo harías una calculadora de áreas de triángulos?
 
