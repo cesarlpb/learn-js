@@ -5,17 +5,30 @@
 ## Operadores Aritméticos
 
 1. Calcula el resultado de las expresiones:
-- `10 + 5 * 2` y `(10 + 5) * 2` y `10 + (5 * 2)` -> ¿qué observas?
-- `3.14 * r **2`, con `r` igual a `10`
-- `10` elevado a `3` y `10` elevado a `-3` -> ¿qué observas?
 
-2. Encuentra el área de un triángulo con base 6 y altura 4. ¿Cómo harías una calculadora de áreas de triángulos?
+Este apartado tiene operaciones numéricas que hay que calcular. Dependiendo de las prioridades o el orden de las operaciones el resultado puede variar.
 
-3. Determina el resultado de la operación `25 / (5 - 5)`. Al resultado, súmale 10. ¿Cuál es el problema?
+- **Operaciones combinadas:** `10 + 5 * 2` y `(10 + 5) * 2` y `10 + (5 * 2)` -> ¿qué observas?
 
-4. Encuentra el perímetro de un cuadrado con un lado de longitud 8. ¿Cómo harías una calculadora para este dato a partir del lado?
+- **Área del círculo:** `3.14 * r ** 2`, con `r` igual a `10` -> ¿cómo podemos hacer un programa que reciba el radio `r` como dato y devuelva el área de la circunferencia?
 
-5. Calcula el resultado de `2` elevado a la `3` y `2` elevado a `0` y `0` elevado a `0`. -> ¿Qué observas?
+![alt text](image-2.png)
+
+- **Notación científica:** `10` elevado a `3` y `10` elevado a `-3` -> ¿qué observas?
+
+2. **Área del triángulo:** Encuentra el área de un triángulo con base 6 y altura 4. -> ¿Cómo harías una calculadora de áreas de triángulos?
+
+![alt text](image-1.png)
+
+3. Determina el resultado de la operación `25 / (5 - 5)`. Al resultado, súmale `10`. ¿Cuál es el problema? ¿Se podría evitar?
+
+4. **Perímetro de un cuadrado:** Encuentra el perímetro de un cuadrado con un lado de longitud 8. ¿Cómo harías una calculadora para este dato a partir del lado? ¿Y el área?
+
+![alt text](image-3.png)
+
+5. Calcula el resultado de `2` elevado a la `3` y `2` elevado a `0` y `0` elevado a `0`. -> ¿Qué observas? ¿Hay algún problema?
+
+**Pista:** un número elevado a cero es el resultado de dividir el número por sí mismo: `5/5 = 5^0` donde `^` es elevado o exponente (operador `**`), siempre que el número no sea `0`.
 
 ## Operadores de Asignación
 
