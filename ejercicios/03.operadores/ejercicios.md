@@ -126,7 +126,8 @@ Añade una explicación del resultado de cada comparación.
 - Viernes
 - No lectivo (los martes)
 
-**String Operators:**
+# Operadores de String
+
 1. Concatena las cadenas:
 
 - `Hola, ` y el nombre de un usuario
