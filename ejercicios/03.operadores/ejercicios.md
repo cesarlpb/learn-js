@@ -132,7 +132,7 @@ Añade una explicación del resultado de cada comparación.
 
 - `Hola, ` y el nombre de un usuario
 - `La hora actual es: ` y la salida de `new Date().getHours()` y ` h`
-- Para un par de números, haz una suma y concatena: `El resultado de la suma de `, `num1`, `num2`, `es: `, suma
+- Para un par de números, haz una suma y concatena: `El resultado de la suma de `, `num1`, `num2`, `es: `, `suma`
 
 2. Calcula la longitud de las cadenas:
 
