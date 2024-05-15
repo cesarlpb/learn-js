@@ -32,18 +32,43 @@ Este apartado tiene operaciones numéricas que hay que calcular. Dependiendo de 
 
 ## Operadores de Asignación
 
-1. Asigna el valor 10 a una variable `x` y luego incrementa su valor en 3. ¿Cómo haces esto de dos formas distintas pero equivalentes?
+Estos operadores son similares a los aritméticos pero además *guardan* (asignan) el valor del resultado a la variable, siempre se pueden sustituir por la variantes operación y asignación, es decir:
 
-2. Declara una variable `total` con el valor 50 y calcula:
+```js
+// Operación con asignación:
+x = x + 1; // sumar 1 a la x
+// Operación con +=
+x += 1;
+// también suma 1 a x y se lo asigna
+```
+
+1. Asigna el valor `10` a una variable `x` y luego incrementa su valor en `3`. ¿Cómo haces esto de dos formas distintas pero equivalentes?
+
+2. Declara una variable `total` con el valor `50` y calcula:
+
 - Restar `10`
 - Sumar `21 %`
 - Añadir `20` más el `10%` de `20`
 
+**Observación:** es posible resolverlo usando de base `50` o es posible aplicar las operaciones sobre el resultado que vamos obteniendo. El resultado final es distinto en cada caso:
+
+```js
+restar 10 -> sumar 21% de 50 -> ... -> resultado_1
+// o
+restar 10 -> sumar 21% de lo que nos ha salido en el paso anterior -> ... -> resultado_2
+// Se puede comprobar que:
+resultado_1 != resultado_2 // true
+```
+
 ¿Cuál es el total final?
 
-3. Inicializa una variable `contador` en 5 y luego multiplícala por `2` cinco veces. ¿Qué obtienes? ¿A qué operación equivale?
+3. Inicializa una variable `contador` en `5` y luego multiplícala por `2` cinco veces. 
 
-4. Asigna el valor 15 a una variable `y` y luego divídela por `3`, `5`, `7`, `10`. ¿Cómo sabes en qué casos la división es exacta?
+¿Qué obtienes? ¿A qué operación equivale?
+
+4. Asigna el valor `15` a una variable `y` y luego divídela por `3`, `5`, `7`, `10` (se divide el `15` en cada caso). 
+
+¿Cómo sabes en qué casos la división es exacta (resto `0`)?
 
 5. Declara una variable `saldo` con el valor `100` y calcula:
 
@@ -53,7 +78,7 @@ Este apartado tiene operaciones numéricas que hay que calcular. Dependiendo de 
 - Dividir por `2`
 - Añadir `21 %`
 
-¿Qué obtienes?
+¿Qué obtienes? ¿Qué suposiciones has hecho?
 
 # Operadores de Comparación
 
