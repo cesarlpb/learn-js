@@ -195,7 +195,7 @@ const diaDeLaSemana = diasDeLaSemana[new Date().getDay()];
 ```js
 // Operación de suma normal
 let inicioSumaNormal = performance.now(); // Tiempo inicial
-let resultadoSumaNormal = 999999999999 + 999999999999; // Operación de suma normal
+let resultadoSumaNormal = 999999999 + 999999999; // Operación de suma normal
 let finSumaNormal = performance.now(); // Tiempo final
 let tiempoSumaNormal = finSumaNormal - inicioSumaNormal; // Tiempo total
 
@@ -203,7 +203,7 @@ console.log("Tiempo de suma normal:", tiempoSumaNormal, "milisegundos");
 
 // Operación de suma bitwise
 let inicioSumaBitwise = performance.now(); // Tiempo inicial
-let resultadoSumaBitwise = 999999999999 ^ 999999999999; // Operación de suma bitwise
+let resultadoSumaBitwise = 999999999 ^ 999999999; // Operación de suma bitwise
 let finSumaBitwise = performance.now(); // Tiempo final
 let tiempoSumaBitwise = finSumaBitwise - inicioSumaBitwise; // Tiempo total
 
