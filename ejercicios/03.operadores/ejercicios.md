@@ -157,7 +157,7 @@ const diaDeLaSemana = diasDeLaSemana[new Date().getDay()];
 
 - Dós párrafos de HTML
 - Un `<div>` con una lista `<ul>`
-- Tres elementos de una lista con enlaces en una sola variable
+- Tres elementos (`<li>`) de una lista con enlaces en una sola variable
 
 5. Concatena:
 
