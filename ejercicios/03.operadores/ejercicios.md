@@ -26,7 +26,7 @@ Este apartado tiene operaciones numéricas que hay que calcular. Dependiendo de 
 
 ![alt text](image-3.png)
 
-5. Calcula el resultado de `2` elevado a la `3` y `2` elevado a `0` y `0` elevado a `0`. -> ¿Qué observas? ¿Hay algún problema?
+5. **Exponenciación:** Calcula el resultado de `2` elevado a la `3` y `2` elevado a `0` y `0` elevado a `0`. -> ¿Qué observas? ¿Hay algún problema?
 
 **Pista:** un número elevado a cero es el resultado de dividir el número por sí mismo: `5/5 = 5^0` donde `^` es elevado o exponente (operador `**`), siempre que el número no sea `0`.
 
