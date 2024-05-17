@@ -24,7 +24,7 @@ console.log("¿Contiene espacio?", contieneEspacio);
 
 // Colocamos la condición para verificar si es null o undefined y lo negamos para tener 'no (es null o undefined):'
 
-let noEsNuloOUndefined = !(str == null && str == undefined);
+let noEsNuloOUndefined = !(str == null || str == undefined);
 console.log("¿No es nulo o undefined?", noEsNuloOUndefined);
 
 // Verificar si tiene más de 5 chars:
