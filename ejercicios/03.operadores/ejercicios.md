@@ -138,7 +138,7 @@ Añade una explicación del resultado de cada comparación.
 
 - `""`
 - `"Hola"`
-- `1+1=2`
+- `"1+1=2"`
 - `"Hoy es " + diaDeLaSemana` en
 ```js
 const diasDeLaSemana = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
