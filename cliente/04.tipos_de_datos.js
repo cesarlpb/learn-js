@@ -87,5 +87,22 @@ function NAND(a, b){
   // definición
 }
 
+// undefined -> valor por defecto si no asignamos a una variable
+let x; // x es undefined
+// También es el valor por defecto de un array sin dato en un índice
+let arr = [1, 2, 3]
+arr[3]; // undefined
+
+// No podemos hacer operaciones con undefined
+// Si nos olvidamos de asignar valor a una variable e intentamos realizar una operación... puede arrojar error debido a que es undefined
+
+// null -> valor es "nulo" o no conocido pero no es que este indefinido
+let email = null;
+// Imagina que el usuario no te da su email y se lo pides después ==> el email se guardaría como null
+
+// Además, null es un tipo de dato bugeado porque 
+typeof(null) // 'object' y debería devolver null
+// es lo que hay...
+
 
 
