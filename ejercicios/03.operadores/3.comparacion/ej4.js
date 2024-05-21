@@ -8,12 +8,12 @@ console.log("¿Tiene más de 10 caracteres?", chars > 10);
 
 // Método 1: usamos el método startsWith()
 let empiezaPorH = str.startsWith("H");
-console.log("¿Empieza por H?", empiezaPorH)
+console.log("¿Empieza por H?", empiezaPorH);
 
 // Método 2: leer el primer caracter y compararlo con 'H'
 let primerChar = str[0];
-let primerChar2 = str.charAt(0)
-console.log(primerChar, primerChar2)
+let primerChar2 = str.charAt(0);
+console.log(primerChar, primerChar2);
 
 console.log("¿Empieza por H?", primerChar == 'H');
 console.log("¿Empieza por H?", primerChar2 == 'H');
@@ -24,7 +24,7 @@ console.log("¿Contiene espacio?", contieneEspacio);
 
 // Colocamos la condición para verificar si es null o undefined y lo negamos para tener 'no (es null o undefined):'
 
-let noEsNuloOUndefined = !(str == null && str == undefined);
+let noEsNuloOUndefined = !(str == null || str == undefined);
 console.log("¿No es nulo o undefined?", noEsNuloOUndefined);
 
 // Verificar si tiene más de 5 chars:
