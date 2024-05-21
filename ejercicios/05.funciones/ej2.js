@@ -6,3 +6,14 @@
  * 
  */
 
+function esPar(num){
+  return num % 2 == 0 // 4 % 2 -> 0 == 0 true
+                      // 5 % 2 -> 1 == 0 false
+}
+
+// Cambiamos a número entero si es posible:
+let num = parseInt(prompt("Ingresa un número:"));
+let esNumeroPar = esPar(num); // guardamos el resultado
+console.log(`El número ${num} es par? ${esNumeroPar}`);
+
+// Nota: no realizamos validación del input -> por ahora, el programa "fallaría" si no recibimos un número
