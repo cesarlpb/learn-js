@@ -121,3 +121,63 @@ let obj = {};
 obj[sym3] = "dato secreto";
 console.log(obj); // sale el Symbol...
 JSON.stringify(obj) // '{}' -> no sale el Symbol
+
+// Object -> todos son obj en JS :)
+
+// Objeto := es la abstracción en nuestro programa de alguna entidad del mundo real / virtual
+
+let coche = {
+  "matricula": 'ABC 123',
+  "año": 2030,
+  "marca": "Musk"
+}
+// Visualizar el objeto coche:
+console.log(coche);
+
+// const y let:
+// ❌ var no lo usamos => permite redeclarar y solo serviría por motivos de retrocompatibilidad
+
+// constantes -> const
+// Las verdaderas constantes cuyo valor no cambia en la ejecución del programa
+const PI = 3.1415;
+const G = 6.67e-11;
+const saludo = "Hola, ¿qué tal?";
+const estaciones = Object.freeze(["verano", "otoño", "invierno", "primavera"]);
+const objFijo = Object.freeze({
+  "nombre": "Pepe",
+  "apellido": "Rana"
+});
+// etc...
+
+// Nota: objFijo.nombre = "otro valor" no arroja error pero JS no cambia el dato
+
+// const para evitar reasignación
+
+// Se usa mucho cuando se hacen funciones:
+const sumar = function(a, b) {
+  return a + b;
+}
+// De esta forma, no se puede "redefinir" la función sumar durante la ejecución
+
+// let para definir variables
+
+// Si no es un valor constante y necesitamos reasignar valor -> let
+let miVar = 1;
+miVar += 1;
+console.log(miVar); // 2
+
+// Dentro de los objetos se puede guardar distintos tipos de datos:
+const usuario = {
+  "id": 123,
+  "username": "pepito"
+}
+const datos = {
+  "usuario": usuario,
+  "lista": [1, 2, 3],
+  "fecha_actual": new Date().toLocaleDateString()
+}
+// este objeto tiene otro objeto dentro (usuario), una lista y una fecha.
+// Puedo obtener las llaves del objeto de esta forma:
+const keys = Object.keys(datos);
+// También podemos obtener los valores del objeto:
+const values = Object.values(datos);
