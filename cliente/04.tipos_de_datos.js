@@ -49,3 +49,13 @@ let suma = int + float; // devuelve number con decimales
 let num = 9;
 let raiz = Math.sqrt(num); // 3
 console.log(`La raíz cuadrada de ${num} es ${raiz}`);
+
+// Bigint -> números enteros más grandes
+
+const MULTIPLICADOR = 123456789;
+
+let maximoInt = Number.MAX_SAFE_INTEGER; // usando Number
+let bigInt = BigInt(maximoInt);      // número que excede el máximo "seguro" de Number
+console.log("Máximo entero:", maximoInt, "x2:", maximoInt * MULTIPLICADOR);
+// También podemos hacer que el Number sea BigInt colocanco n final:
+console.log("Usando BigInt:", bigInt, "x2:", bigInt * BigInt(MULTIPLICADOR));
