@@ -13,7 +13,7 @@ output: mensaje -> "Hola, Pepe"
 */
 
 console.log("--- Ejercicio 03 ---");
-console.log("La respuesta sale por alert()");
+console.log("Responde al prompt() y verás un alert() con un saludo :)")
 // Pedimos el nombre del usuario:
 let nombre = prompt("¿Cómo te llamas?");
 let saludo = "Hola, " + nombre;

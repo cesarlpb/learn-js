@@ -1,12 +1,11 @@
 /*
 Pues seguimos con los números. 
 
-Escribe un script que dado un número nos devuelva true 
-si es un número par y false si es un número impar. 
+Escribe un script  que dado un número nos devuelva true si es un número par y false si es un número impar. 
 
-No usar condicionales.
+No usar condiconales.
 
-input: num -> entero o int
+- Hay que ver como se hace una comparación
+- El tipo boolean => true o false
 
-output: boolean -> true o false
 */
