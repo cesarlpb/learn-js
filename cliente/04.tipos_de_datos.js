@@ -20,10 +20,11 @@
 let miString = "Hola, mundo";
 let str = 'Texto 1';
 // Se introduce un salto de línea antes del string:
-let str2 = `
-  Texto 2 
-  con suma: 
-  ${2+2}`;
+let str2 = 
+`Texto 2 
+algo
+con suma: 
+${2+2}`;
 // Las variables String se pueden concatenar con +
 let textoFinal = miString + "\n" + str + "\n" + str2;
 console.log(textoFinal);
@@ -56,6 +57,35 @@ const MULTIPLICADOR = 123456789;
 
 let maximoInt = Number.MAX_SAFE_INTEGER; // usando Number
 let bigInt = BigInt(maximoInt);      // número que excede el máximo "seguro" de Number
-console.log("Máximo entero:", maximoInt, "x2:", maximoInt * MULTIPLICADOR);
+console.log("Máximo entero:", maximoInt, "prod:", maximoInt * MULTIPLICADOR);
 // También podemos hacer que el Number sea BigInt colocanco n final:
-console.log("Usando BigInt:", bigInt, "x2:", bigInt * BigInt(MULTIPLICADOR));
+console.log("Usando BigInt:", bigInt, "prod:", bigInt * BigInt(MULTIPLICADOR));
+
+// Boolean -> true o false -> 1 bit
+
+// Se usa para guardar el resultado de condiciones (comparaciones), estados, etc. que se puedan representar como verdadero o falso.
+
+let esJsDivertido = true;
+// Podemos usar booleano para operaciones lógicas:
+let a = false, b = false;
+/* AND
+0 0 0
+0 1 0
+1 0 0
+1 1 1
+*/
+console.log(a, b, a && b);
+b = true;
+console.log(a, b, a && b);
+a = true; b = false;
+console.log(a, b, a && b);
+b = true;
+console.log(a, b, a && b);
+// Otros operadores lógicos son ||, !, etc.
+// Para hacer las tablas podría ser más sencillo hacer una función:
+function NAND(a, b){
+  // definición
+}
+
+
+
