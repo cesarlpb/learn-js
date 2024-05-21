@@ -12,6 +12,7 @@
  */
 
 // String -> texto
+
 // Se definen por '' o "" o `` 
   // En el caso de `` podemos colocar variables con ${} -> `${2+2}` o `Hola, ${miVar}`
   // También, `` permite saltar línea
@@ -31,3 +32,20 @@ console.log(2 + '2'); // el resultado es String
 // typeof me permite comprobar si una variable es de tipo String -> 'string'
 console.log(typeof("Texto") == 'string'); // true
 
+// Number -> número
+
+// Agrupo los enteros (int) y número con decimales (float) 
+// Por defecto son de 64 bits -> 1 => 0...1 ocupa 64 bits
+// Si quiero declarar un número sin decimales, no los coloco
+let int = 2;
+// Si quiero número con decimales los coloco
+let float = 2.5;
+// Ambos son number:
+console.log(typeof(int) == 'number');   // true
+console.log(typeof(float) == 'number'); // true
+// Los números se pueden usar en operaciones aritméticas:
+let suma = int + float; // devuelve number con decimales
+// Se pueden usar en operaciones de la librería matemática:
+let num = 9;
+let raiz = Math.sqrt(num); // 3
+console.log(`La raíz cuadrada de ${num} es ${raiz}`);
