@@ -104,5 +104,20 @@ let email = null;
 typeof(null) // 'object' y debería devolver null
 // es lo que hay...
 
+// Symbol -> único
 
+// Se usan para colocar keys únicos o privados en objetos
+// Son útiles cuando tengamos que asegurar que dos datos no puedan ser iguales
 
+let sym = Symbol("dato");
+let sym2 = Symbol("dato");
+// A pesar de ser iguales en definición:
+console.log(sym == sym2)  // false
+console.log(sym === sym2) // false
+// Esto sucede porque cada Symbol es "único".
+// También podemos usar Symbol para guardar un dato oculto en un objeto:
+let sym3 = Symbol("Supersafe");
+let obj = {};
+obj[sym3] = "dato secreto";
+console.log(obj); // sale el Symbol...
+JSON.stringify(obj) // '{}' -> no sale el Symbol
