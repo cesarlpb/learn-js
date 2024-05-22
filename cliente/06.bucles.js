@@ -144,9 +144,31 @@ for (let item of keys){
 // Para todo lo demás: for
 
 // while y do while
-
-
-
+// Mientras la condición sea true, el bucle continua
+let i = 0;
+while (i < 10) {
+  console.log("Iteración:", i);
+  i++; // i = i + 1;
+}
+// Cuenta atrás:
+i = 10;
+while (i >= 0) {
+  console.log("Iteración:", i);
+  i--; // i = i - 1;
+}
+// do while
+// El while podría no ejecutarse:
+i = 10;
+while (i < 10) {
+  console.log(i, new Date().toLocaleTimeString());
+  i++;
+}
+// El do while me permite ASEGURAR una iteración:
+i = 10;
+do {
+  console.log(i, new Date().toLocaleTimeString());
+  i++;
+} while(i < 10);
 
 
 
