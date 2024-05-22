@@ -25,6 +25,7 @@ if (edad < 18) {
   // = o mayor
   console.log("Eres mayor de edad o tienes al menos 18")
 }
+
 // if + else if + else
 // se pueden poner muchas condiciones adicionales con else if
 if(edad < 18){
@@ -52,6 +53,27 @@ if (dia == 'lunes'){
 }
 
 // switch
+// Sirve validar casos, sobre todo cuando los valores son conocidos
+switch(dia.toLowerCase()){
+  case 'lunes':
+    console.log("Es lunes!");
+    break;
+  case 'martes':
+    console.log("Es martes!");
+    break;
+  case 'miércoles':
+    console.log("Es miércoles!");
+    break;
+  case 'jueves':
+    console.log("Es jueves!");
+    break;
+  case 'viernes':
+    console.log("Es viernes!");
+    break;
+  default:
+    console.log("Es fin de semana");
+}
+// validamos el día pasado a minúsculas para maximizar compatibilidad con el input
 
 // for y variantes
 
