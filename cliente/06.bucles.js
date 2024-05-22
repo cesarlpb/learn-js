@@ -77,6 +77,48 @@ switch(dia.toLowerCase()){
 
 // for y variantes
 
+// for
+// Se usa para repetir acciones un número de veces
+// Normalmente, el número de veces es conocido
+
+// for
+
+// bucle que se repite 10 veces
+for (let i = 0; i < 10; i++) {
+  console.log("Iteración:", i)
+}
+// colocamos <=
+for (let i = 0; i <= 10; i++) {
+  console.log("Iteración:", i)
+}
+// cuenta atrás
+for (let i = 10; i > 0; i--) {
+  console.log("Iteración:", i)
+}
+// incluimos el 0:
+for (let i = 10; i >= 0; i--) {
+  console.log("Iteración:", i)
+}
+// Suma los 100 primeros enteros:
+// Empezamos en el 0 y acabamos en el 100 (incluido)
+let suma = 0;
+for (let x = 0; x <= 100; x++){
+  suma += x; // suma = suma + x;
+}
+console.log("Suma:", suma) // 5050
+// Usando variables para el inicio y el final de la secuencia:
+let inicio = 10;
+let final = 20;
+suma = 0; // declarar otra variable o resetear a 0
+for (let x = inicio; x <= final; x++){
+  suma += x;
+}
+console.log("Suma:", suma) // ??
+
+// for in
+
+// for of
+
 // while y do while
 
 
