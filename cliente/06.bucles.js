@@ -115,9 +115,33 @@ for (let x = inicio; x <= final; x++){
 }
 console.log("Suma:", suma) // ??
 
-// for in
+// for in -> Object
+let coche = {
+  // key : value
+  "matricula": "123",
+  "dato random": "Hola",
+  "año": 2099
+}
+for(let key in coche){
+  // key value
+  console.log(key, coche[key])
+}
+// Otra forma de sacar los keys y values:
+const keys = Object.keys(coche);
+const values = Object.values(coche);
+for (let i = 0; i < keys.length; i++ ){
+  console.log(keys[i], values[i])
+}
 
-// for of
+// for of -> iterable o Array
+for (let item of keys){
+  console.log("key:", item)
+}
+
+// ¿Cuándo cada uno?
+// Para objetos -> for in -> iteran todos los elementos
+// Para arrays  -> for of -> iteran todos los elementos
+// Para todo lo demás: for
 
 // while y do while
 
