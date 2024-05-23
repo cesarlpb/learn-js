@@ -24,26 +24,17 @@ function dividir(a, b) {
 // Realizamos la operación:
 // dividir(a, b);
 
-// ¿Cómo vuelvo a pedir datos si tengo b = 0?
-let a, b;
-do {
-  a = parseInt(prompt("Ingresa el dividendo:"));
-  // TODO 2: pedir solo b si es cero:
-  b = parseInt(prompt("Ingresa el divisor:"));
-  // TODO: colocar un if para evitar llamada si b es 0
-  let cociente = dividir(a, b);
-  console.log("b es: ", b);
-  console.log("cociente:", cociente);
-} while(b == 0);
-
-// print
-
-function myPrint(mensaje, color){
-  if (color == 'r'){
-    console.log(`%c ${mensaje} `, 'background: #000; color: #ff0000');
-  } else if (color == 'g') {
-    console.log(`%c ${mensaje} `, 'background: #000; color: #00ff00');
-  } else {
-    console.log(`%c ${mensaje} `, 'background: #000; color: #aaa');
-  }
+// main:
+function ej3(){
+  // ¿Cómo vuelvo a pedir datos si tengo b = 0?
+  let a, b;
+  do {
+    a = parseInt(prompt("Ingresa el dividendo:"));
+    // TODO 2: pedir solo b si es cero:
+    b = parseInt(prompt("Ingresa el divisor:"));
+    // TODO: colocar un if para evitar llamada si b es 0
+    let cociente = dividir(a, b);
+    console.log("b es: ", b);
+    console.log("cociente:", cociente);
+  } while(b == 0);
 }
