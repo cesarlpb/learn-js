@@ -12,4 +12,4 @@ let mensaje = "Hola, " + nombre;
 // Usamos alert para presentar el mensaje:
 // alert(mensaje);
 // Actualizamos el dato en la página en un <p>:
-document.getElementById("saludo").innerText = mensaje;
+document.getElementById("saludo").innerText += mensaje;
