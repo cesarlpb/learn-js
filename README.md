@@ -25,9 +25,9 @@ Diagrama de donde se puede usar Javascript (cliente o servidor)
 
 ## Temas de Javascript (cliente o frontend)
 
-  1. Sintáxis de JS (comentarios, punto y coma, mayúsculas y minúsculas, sensibilidad a mayúsculas y minúsculas) en [01.sintaxis.html](cliente/01.sintaxis.html)
+  1. Sintáxis de JS (comentarios, punto y coma, mayúsculas y minúsculas, sensibilidad a mayúsculas y minúsculas) en [01.sintaxis](cliente/01.sintaxis)
   2. Variables (declaraciones, camelCase, let, const, var) 
-  - [02.variables.html](cliente/02.variables)
+  - [02.variables](cliente/02.variables)
   3. Operadores (aritméticos, de asignación, de comparación, lógicos, ternario) 
   4. Tipos primitivos (string, number, boolean, null, undefined, symbol) [04.tipos_de_datos.html](cliente/04.tipos_de_datos.html)
   5. Funciones en JS (declaración, expresión, arrow function, parámetros, argumentos, return) 
