@@ -10,4 +10,6 @@ let nombre = prompt("Introduce tu nombre:");
 // Creamos el mensaje para saludar:
 let mensaje = "Hola, " + nombre;
 // Usamos alert para presentar el mensaje:
-alert(mensaje);
+// alert(mensaje);
+// Actualizamos el dato en la página en un <p>:
+document.getElementById("saludo").innerText = mensaje;
