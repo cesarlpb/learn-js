@@ -20,9 +20,16 @@ let mensaje = "";
     // }
 
     // ternario
+    // Forma 1: se edita mensaje en cada caso
     cuadrado === cuadradoCorrecto 
         ? mensaje = "Es correcto" 
         : mensaje = "No es correcto"
+        
+    // Forma 2: se asigna valor a mensaje como resultado de evaluar ternario
+    // mensaje = 
+    //     cuadrado === cuadradoCorrecto 
+    //         ? "Es correcto" 
+    //         : "No es correcto"
         
 // output
 alert(mensaje);
