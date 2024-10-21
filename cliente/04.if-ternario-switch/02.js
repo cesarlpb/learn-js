@@ -8,16 +8,21 @@
 // inputs
 let numero = Number(prompt("Introduce un número:"));
 let cuadrado = Number(prompt("Introduce el cuadrado del número anterior:"));
+let cuadradoCorrecto = numero ** 2;
+let mensaje = "";
 // main
 
     // if-else
-    let cuadradoCorrecto = numero ** 2;
-    if (cuadrado === cuadradoCorrecto){
-        alert("Es correcto!")
-    } else {
-        alert("No es correcto :(")
-    }
+    // if (cuadrado === cuadradoCorrecto){
+    //     mensaje = "Es correcto!";
+    // } else {
+    //     mensaje = "No es correcto :(";
+    // }
 
     // ternario
-
+    cuadrado === cuadradoCorrecto 
+        ? mensaje = "Es correcto" 
+        : mensaje = "No es correcto"
+        
 // output
+alert(mensaje);
