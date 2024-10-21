@@ -7,8 +7,18 @@ let letra = prompt("Introduce una letra:");
 
 // Validamos si es A o a la letra introducida:
 // Escribimos el mensaje en cada caso
-if(letra == "A" || letra == "a"){
-    alert("Has acertado!")
+
+// Modificación: vamos a permitir solamente ciertas letras: A, B, C, D
+const letrasPermitidas = ["A", "B", "C", "D", "a", "b", "c", "d"];
+
+if(letrasPermitidas.includes(letra)){
+    // Ejecutamos nuestro programa
+    if(letra == "A" || letra == "a"){
+        alert("Has acertado!")
+    } else {
+        alert("Has fallado!")
+    }
 } else {
-    alert("Has fallado!")
+    // Mostramos un error
+    alert("Ese caracter no es válido...")
 }
