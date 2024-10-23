@@ -10,18 +10,25 @@
  */
 function sumar(num1, num2){
     // Existen niveles para el console: debug < info o log < warn < error
+    let mensaje = "";
+
     if(typeof(num1) != 'number'){
-        console.error("num1 no es number, es de tipo:", typeof(num1))
-        return NaN;
+        mensaje += "num1 no es number, es de tipo: " + typeof(num1);
     }
     if(typeof(num2) != 'number'){
-        console.error("num2 no es number, es de tipo:", typeof(num2))
+        mensaje += "\nnum2 no es number, es de tipo:" + typeof(num2);
+    }
+
+    if (mensaje){
+        console.error(mensaje);
         return NaN;
     }
+
     return num1 + num2;
 }
 
 // Casos de uso:
 sumar(1, true)  // error
-sumar(1, 'a')   // error
+sumar('a', 1)   // error
+sumar("1", "2") // ambos params incorrectos
 sumar(1, 2)     // 3 ----- ok
