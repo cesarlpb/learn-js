@@ -44,3 +44,20 @@ function saludarConInput(mensaje){
 function saludarConInputOutput(usuario){
     return "Hola, " + usuario
 }
+
+// Forma de usarlo:
+// 1 - sin inputs y sin return
+saludar(); // muestra el mensaje
+
+// 2 - sin inputs con return
+let saludo = saludarConReturn(); // retorna un saludo
+alert(saludo);
+
+// 3 - con inputs sin return
+let saludoNuevo = "oli";
+saludarConInput(); // recibe un saludo y hace un alert
+
+// 4 - con inputs y con return
+let usuario = "Pepe, La Rana";
+let saludoConNombre = saludarConInputOutput(usuario);
+alert(saludoConNombre);
