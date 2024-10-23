@@ -9,10 +9,14 @@
  * @returns {Number} el resultado de la suma 
  */
 function sumar(num1, num2){
-    if(typeof(num1) != 'number' || typeof(num2) != 'number'){
-        // Existen niveles para el console: debug < info o log < warn < error
-        console.error("Alguno de los params no es Number")
-        return NaN
+    // Existen niveles para el console: debug < info o log < warn < error
+    if(typeof(num1) != 'number'){
+        console.error("num1 no es number, es de tipo:", typeof(num1))
+        return NaN;
+    }
+    if(typeof(num2) != 'number'){
+        console.error("num2 no es number, es de tipo:", typeof(num2))
+        return NaN;
     }
     return num1 + num2;
 }
