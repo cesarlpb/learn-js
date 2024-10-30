@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clases y Objetos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Clases y Objetos</h1>
+  <h2>Clases</h2>
+  <h2>Objetos</h2>
+  <h3>Representación en String</h3>
+  <pre><code>
+    el.innerText = obj;
+  </code></pre>
+  <p><strong>auto:</strong><span id="p1"></span></p>
+  <pre><code>
+    el.innerText = JSON.stringify(obj);
+  </code></pre>
+  <p><strong>JSON.stringify:</strong><span id="p2"></span></p>
+  <pre><code>
+    el.innerText = JSON.stringify(obj, null, 4); // 4 siendo la indentación
+  </code></pre>
+  <p><strong>Con indentación:</strong><span id="p3"></span></p>
+  <pre><code>
+    let str = "";
+    let keys = Object.keys(coche2);
+    for(let item of keys){
+        str += `\n${item}: ${coche2[item]}`
+    }
+  </code></pre>
+  <p><strong>Sin notación de obj:</strong><span id="p4"></span></p>
+  <!-- Javascript antes de cierre de body -->
+  <script src="07.clases-y-objetos.js"></script>
+  <!-- Pon el JS aquí ^ -->
+</body>
+</html>
