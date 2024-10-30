@@ -11,8 +11,36 @@ class Car {
             throw new TypeError("El campo year debe ser entero, se recibió: " + typeof(_year))
         }
         this.year = yearEntero; // no se crea el objeto si se arroja error
+
+        // Lógica: al crearlo no está en marcha o arrancado por defecto:
+        this.cocheArrancado = false;
+
+        // Lógica: ubicación por defecto es casa
+        this.ubicacion = "casa";
         
         console.log("Se ha creado el objeto con valores:", _name, _year);
+    }
+
+    // Métodos := funciones dentro de una clase que se pueden ejecutar a partir 
+    // de los objetos creados o a partir de la clase
+    arrancar(){
+        this.cocheArrancado = true;
+        alert(`Coche ${this.name} arrancado!!! 🚗`);
+    }
+
+    mover(destino){
+        if(!this.cocheArrancado){
+            alert("Tienes que arrancar el coche...");
+        } else {
+            this.ubicacion = destino;
+            alert("El coche se ha desplazado a " + destino)
+        }
+    }
+
+    aparcar(){
+        this.cocheArrancado = false;
+        this.ubicacion = "parking";
+        alert("El coche se ha aparcado en " + this.ubicacion);
     }
   }
 
@@ -26,6 +54,20 @@ let coche3 = new Car("Mazda", "2015")   // no hay control de tipos :)
 $("p1").innerText += " " + coche2;
 $("p2").innerText += " " + JSON.stringify(coche2);
 $("p3").innerText += " " + JSON.stringify(coche2, null, 4);
+
+// Ejecutamos métodos:
+// arrancamos:
+coche2.arrancar();
+// coche3.arrancar();
+// movemos:
+coche2.mover("Mercadona");
+coche2.ubicacion;
+// aparcar:
+coche2.aparcar();
+coche2.ubicacion;
+coche2.cocheArrancado;
+
+// Funciones:
 
 // buena idea: hacer una función para formatear esta representación del objeto
 let str = "";
