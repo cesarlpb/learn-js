@@ -3,13 +3,22 @@ class Car {
     // constructor := método que se llama primero cuando 
     // creas (instancias la clase) un objeto
     // se usa para inicializar el objeto con valores necesarios
-    constructor(name, year) {
-      this.name = name;
-      this.year = year;
+    constructor(_name, _year) {
+        this.name = _name;
+        // Modificación: validamos que year es número o convertible a número y lo guardamos como entero
+        let yearEntero = parseInt(_year);
+        if(Number.isNaN(yearEntero)){
+            throw new TypeError("El campo year debe ser entero, se recibió: " + typeof(_year))
+        }
+        this.year = yearEntero; // no se crea el objeto si se arroja error
+        
+        console.log("Se ha creado el objeto con valores:", _name, _year);
     }
   }
 
-let coche = new Car() // name y year son undefined
+// Este objeto no se llega a crear:
+// let coche = new Car() // name y year son undefined
+// Estos objetos sí se crean:
 let coche2 = new Car("Ford", 2024)      // valores iniciales
 let coche3 = new Car("Mazda", "2015")   // no hay control de tipos :)
 
