@@ -4,12 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redes Neuronales con Brain.js</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 </head>
 <body>
     <h1>Redes Neuronales con Brain.js</h1>
     <p>Documentación: <a href="https://brain.js.org/#/getting-started" target="_blank">enlace</a>.</p>
     <hr>
+    <p>Por algún motivo la regresión lineal no la está haciendo bien Brain.js así que el ejemplo de Celsius a Farenheit lo hago con regresión lineal directa en <code>temperatura.js</code> sin la librería.</p>
+
+    <h2>Celsius a Farenheit</h2>
+    <canvas id="myChart" width="400" height="400"></canvas>
+
+    <!-- Librería de redes neuronales en JS: -->
     <script src="//unpkg.com/brain.js"></script>
-    <script src="xor.js"></script>
+
+    <!-- Librería de gráficas: -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Modelo que replica puerta XOR: -->
+    <!-- <script src="xor.js"></script> -->
+
+    <!-- Modelo que pasa grados Celsius a Farenheit: -->
+    <script src="temperatura.js"></script>
 </body>
 </html>
