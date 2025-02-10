@@ -26,3 +26,15 @@ output: 220     -> €
 // 2. Realizamos operaciones necesarias
 
 // 3. Escribimos el resultado (output)
+
+// ************************************************************************** //
+
+// Pasos para resolver
+
+// 1. Declaramos variables necesarias (inputs)
+let precio = 100;
+let iva = 21;
+// 2. Realizamos operaciones necesarias
+let total = precio + (iva / 100 ) * precio
+// 3. Escribimos el resultado (output)
+console.log(total) // Escribe el resultado en consola -> lectura
