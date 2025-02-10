@@ -1,6 +1,11 @@
 # learn-js
 Repositorio para aprender Javascript
 
+## Libro
+
+- [Eloquent Javascript (3rd ed)](https://eloquentjavascript.net/)
+  - [Versión en español (2da ed)](https://eloquentjs-es.thedojo.mx/)
+
 ## Teoría
 
   - [Introducción a Javascript de W3schools](https://www.w3schools.com/js/default.asp) 
