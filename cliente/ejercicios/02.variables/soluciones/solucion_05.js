@@ -14,7 +14,13 @@ output: consumo en L / km => number
 // Pasos para resolver
 
 // 1. Declaramos variables necesarias (inputs)
-
+let km, litros; // undefined
+km = prompt("¿Cuántos km has recorrido?");
+litros = prompt("¿Cuántos L has gastado?");
 // 2. Realizamos operaciones necesarias
-
+km = Number(km);
+litros = Number(litros);
+consumo = litros / km;
+console.log(km, litros, consumo);
 // 3. Escribimos el resultado (output)
+alert("Se han consumido: " + consumo + " L / km");
