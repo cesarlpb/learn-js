@@ -25,9 +25,9 @@ Perímetro: 4*10 = 40
 
 // 1. Declaramos variables necesarias (inputs)
 let lado = 10;
-console.log(lado)
+console.log(lado); // -> comprobamos que el dato es correcto
 // 2. Realizamos operaciones necesarias
-let area = lado * lado
+let area      = lado * lado
 let perimetro = 4 * lado
 // 3. Escribimos el resultado (output)
-console.log(area, perimetro)
+console.log(area, perimetro) // -> escribimos resultado en consola
