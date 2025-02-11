@@ -69,3 +69,10 @@ Diagrama de donde se puede usar Javascript (cliente o servidor)
     4. Uso de archivos
 
     5. Despliegue
+
+## Módulos adicionales
+
+  - [Machine Learning](./machine-learning-ai/)
+  - Blockchain
+  - APIs
+  - Otros
