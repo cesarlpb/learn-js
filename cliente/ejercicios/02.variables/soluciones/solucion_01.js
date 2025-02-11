@@ -25,8 +25,9 @@ output: 220     -> €
 
 // 1. Declaramos variables necesarias (inputs)
 let precio = 100;
-let iva = 21;
+let iva    = 21; // -> porcentaje, para usarlo en un cálculo
+// hay que dividir por 100
 // 2. Realizamos operaciones necesarias
-let total = precio + (iva / 100 ) * precio
+let total = precio + (iva / 100) * precio;
 // 3. Escribimos el resultado (output)
-console.log(total) // Escribe el resultado en consola -> lectura
+console.log(total); // Escribe el resultado en consola -> lectura
