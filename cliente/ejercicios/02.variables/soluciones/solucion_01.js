@@ -19,14 +19,6 @@ output: 220     -> €
 
 */
 
-// Pasos para resolver
-
-// 1. Declaramos variables necesarias (inputs)
-
-// 2. Realizamos operaciones necesarias
-
-// 3. Escribimos el resultado (output)
-
 // ************************************************************************** //
 
 // Pasos para resolver
