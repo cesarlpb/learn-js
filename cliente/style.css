@@ -36,3 +36,6 @@ td {
     text-align: center;
     padding: 1rem;
 }
+li {
+    margin: 0.5em auto;
+}
