@@ -22,14 +22,24 @@ output: 60 / 3 = 20
 let num1 = prompt("Introduce el primer número:");
 let num2 = prompt("Introduce el segundo número:");
 let num3 = prompt("Introduce el tercer número:");
-console.log(num1, num2, num3);
+
+console.log(num1, num2, num3); // -> comprobamos los datos en consola
+                               // son de tipo string en este momento
+
 // Usamos Number para evitar este problema:
+/**
+ * Number nos permite pasar el dato a tipo numérico -> "number"
+ * después de esto, si hacemos typeof saldría "number"
+ */
 num1 = Number(num1);
 num2 = Number(num2);
 num3 = Number(num3); // si no se hace esto => el resultado 
                      // MUY probablemente será incorrecto
-console.log(num1, num2, num3);
+
+console.log(num1, num2, num3); // -> ahora los datos aparecen como number
+                               // (notad el cambio de color en consola)
+
 // 2. Realizamos operaciones necesarias
 let media = ( num1 + num2 + num3 ) / 3;
 // 3. Escribimos el resultado (output)
-console.log(media);
+console.log(media); // -> imprimimos el resultado
