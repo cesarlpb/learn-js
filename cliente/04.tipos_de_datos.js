@@ -13,9 +13,14 @@
 
 // String -> texto
 
-// Se definen por '' o "" o `` 
+// Se definen por '' o "" o `` (string interpolado)
   // En el caso de `` podemos colocar variables con ${} -> `${2+2}` o `Hola, ${miVar}`
-  // También, `` permite saltar línea
+  // También, `` permite saltar línea:
+  /**
+   * let texto = `Hola
+   *              mundo
+   *              `
+   */
 
 let miString = "Hola, mundo";
 let str = 'Texto 1';
@@ -27,11 +32,11 @@ con suma:
 ${2+2}`;
 // Las variables String se pueden concatenar con +
 let textoFinal = miString + "\n" + str + "\n" + str2;
-console.log(textoFinal);
+console.log("textoFinal:", textoFinal);
 // Si se hacen operaciones numéricas, se transforma a string el resultado:
-console.log(2 + '2'); // el resultado es String
+console.log("suma 2 + '2' =", 2 + '2'); // el resultado es String -> '22'
 // typeof me permite comprobar si una variable es de tipo String -> 'string'
-console.log(typeof("Texto") == 'string'); // true
+console.log("El tipo de dato es string?", typeof("Texto") == 'string'); // true
 
 // Number -> número
 
