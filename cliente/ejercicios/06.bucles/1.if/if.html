@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>If</title>
+  <link rel="stylesheet" href="../../../style.css">
+  <title>Bucle If</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -35,19 +36,60 @@
   </style>
 </head>
 <body>
-  <h1>If</h1>
+  <h1>Bucle If (Si condicional)</h1>
+  <p>
+    El bucle o <em>loop</em> if es un bloque que permite controlar el 
+    comportamiento del programa según la evaluación de una condición.
+  </p>
+  <p>
+    <ul>
+      <li>if      -> si condicional</li>
+      <li>else    -> en caso contrario</li>
+      <li>else if -> en otro caso // otra condición</li>
+    </ul>
+  </p>
+  <pre><code>
+    // solo true:
+    if (condición) {
+      // lo que sucede en caso de true
+    }
+
+    if (condición) {
+      // lo que sucede en caso de true
+    } else {
+      // lo que sucede en caso de false
+    }
+  </code></pre>
+
+  <script>
+    let a = 1;
+    let b = 2;
+
+    // solo el caso true:
+    if (a > b) {
+      console.log("a es mayor que b");
+    } 
+    // caso true y false:
+    if (a > b) {
+      console.log("a es mayor que b");
+    } else {
+      console.log("a no es mayor que b")
+      // en caso de a = b también aparece este mensaje
+    }
+  </script>
+
   <!--  -->
-  <div>
+  <!-- <div>
     <h2>Ej 02</h2>
     <p id="ej02" style="margin-bottom: 1rem;"></p>
     <br>
     <a href="#" onclick="ej2()" class="buttonClass">Ejecutar main() de ej 02</a>
-  </div>
+  </div> -->
   <!-- Importamos myPrint() -->
-  <script src="myPrint.js"></script>
+  <!-- <script src="myPrint.js"></script> -->
   <!-- Ejercio 02 -->
-  <script src="ej2.js"></script>
+  <!-- <script src="ej2.js"></script> -->
   <!-- Ejercio 03 -->
-  <script src="ej3.js"></script>
+  <!-- <script src="ej3.js"></script> -->
 </body>
 </html>
