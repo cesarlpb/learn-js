@@ -34,11 +34,21 @@ comensales = Number.parseInt(comensales); // nos aseguramos de que es un entero
 
 let gramosPatatas = 0, gramosCebolla = 0, huevos = 0;
 let kgPatatas = 0;
+
+/* Constantes: */
+// Ventaja: si necesitases cambiar las proporciones en el futuro lo puedes hacer
+// editando SOLO estas constantes:
+
+const MIL = 1_000;
+const GRAMOS_PATATAS_POR_COMENSAL = 200;
+const GRAMOS_CEBOLLA_KG_PATATA    = 300;
+const HUEVOS_POR_KG_PATATA        = 5; 
+
 // 2. Realizamos operaciones necesarias
-gramosPatatas = 200 * comensales;
-kgPatatas = gramosPatatas / 1_000;
-huevos = kgPatatas * 5;
-gramosCebolla = 300 * kgPatatas;
+gramosPatatas = GRAMOS_PATATAS_POR_COMENSAL * comensales;
+kgPatatas     = gramosPatatas / MIL;
+huevos        = Math.ceil(kgPatatas * HUEVOS_POR_KG_PATATA);
+gramosCebolla = GRAMOS_CEBOLLA_KG_PATATA * kgPatatas;
 // 3. Escribimos el resultado (output)
 console.log(`
   Receta de tortilla:
