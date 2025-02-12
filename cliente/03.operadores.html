@@ -600,13 +600,75 @@
 
     
     <h2>Operadores de Strings</h2>
+    <h3>Operador <code>+</code></h3>
+    El operador <code>+</code> concatena los string => los coloca uno al lado del otro. 
+    Si no añades espacios, no los coloca.
+    <pre><code>
+  let saludo = "Hola, "; // notad el espacio al final
+  let nombre = "Pepe";
+  console.log(saludo + nombre); // "Hola, Pepe"
+    </code></pre>
+    <h3>Operador <code>+=</code></h3>
+    Realiza la concatenación y asigna a la variables.
+    <pre><code>
+  let saludo = "Hola, ";
+  let nombre = "Pepe";
+  saludo += nombre; // "Hola, Pepe"
+  console.log(saludo); // "Hola, Pepe"
+    </code></pre>
+
+  <p>Si usas <code>=</code> sobreescribes (se borra) el contenido anterior. 
+  Pero si necesitas añadir algo nuevo manteniendo lo anterior, <code>+=</code> es adecuado.</p>
     
-    <h2>Operadores Bitwise & Shift</h2>
+  <h2>Operadores Bitwise & Shift</h2>
+
+  <p>TBD</p>
     
-    <h2>Operador Ternario</h2>
+  <h2>Operador Ternario</h2>
+
+  <p>El operador ternario <code>condición a evaluar ? caso true : caso false</code> 
+    sirve para evaluar condiciones y o bien realizar una instrucción en caso de 
+    <code>true / false</code> o bien asignar un valor a una variable.</p>
+
+  <pre><code>
+    // solo el ternario:
+    let nombre = prompt("¿Cuál es tu nombre?"); 
+    // si hay al menos un caracter es true y en caso contrario es false:
+    nombre ? alert("Hola, " + nombre) : alert("Hola, no hemos recibido tu nombre.");
+
+    // asignamos resultado del ternario a una variable:
+    let a = 3;
+    let b = 1;
+    let resultado = a > b ? "a es mayor que b" : "a no es mayor que b";
+  </code></pre>
     
-    <h2>Operadores de Tipos</h2>
+  <h2>Operadores de Tipos</h2>
   
+  <p>Hay dos operadores para evaluar tipos: <code>typeof</code> e <code>instanceof</code>.</p>
+
+  <pre><code>
+    let nombre = prompt("¿Cómo te llamas?");
+    let edad   = prompt("¿Cuántos años tienes?");
+    
+    // Se espera que nombre sea 'string' y edad sea 'number'
+    edad = Number(edad);
+    
+    // Vamos a comprobarlo con typeof:
+    console.log("✅ nombre es de tipo:", typeof nombre); // ... 'string'
+    console.log("✅ edad es de tipo:", typeof edad); // ... 'number'
+
+    // Cómo se puede hacer "lo mismo" con instanceof:
+    console.log("❌ nombre es instancia de String?", nombre instanceof String); // false
+    console.log("❌ edad es instancia de Number?", nombre instanceof Number);   // false
+
+    // Con tipos primitivos, no funciona "como debería" el instanceof. 👀
+    // Hay que usar typeof 👀
+
+    // Bonus
+    // ¿¿ Cómo compruebas si algo es string o number ??
+    console.log("✅ nombre es string?", typeof nombre == 'string');
+    console.log("✅ edad es number?", typeof edad == 'number');
+  </code></pre>
   
   <!-- Javascript antes de cierre de body -->
   <script src="03.operadores.js"></script>
