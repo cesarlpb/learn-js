@@ -30,7 +30,25 @@ var2 -> 1
 // Pasos para resolver
 
 // 1. Declaramos variables necesarias (inputs)
-
+let a = prompt("Introduce el primer valor:");
+let b = prompt("Introduce el segundo valor:") 
+let temp;
 // 2. Realizamos operaciones necesarias
 
+// se pide que los valores de a <---> b se intercambien
+// Idea: usamos temp para intercambiar los valores => memoria temporal
+
+console.log("Valores iniciales:");
+console.log("a:", a);
+console.log("b:", b);
+
+temp = b; // guardamos valor de b en temp
+// pasamos el valor de a --> b
+b = a;
+// a <---- temp (valor original de b)
+a = temp;
+
 // 3. Escribimos el resultado (output)
+console.log("Valores finales:");
+console.log("a:", a);
+console.log("b:", b);
