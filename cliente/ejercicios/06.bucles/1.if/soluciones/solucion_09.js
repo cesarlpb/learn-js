@@ -33,7 +33,7 @@ console.log(`
   -----------------------------------------------------------
   Descripción         Unidades | Precio Unidad | Precio Total
   -----------------------------------------------------------
-  Artículo sin nombre    ${numArticulos}          ${precioUnidad}          ${precioTotal}
+  Artículo sin nombre    ${numArticulos}          ${precioUnidad.toFixed(2)} €         ${precioTotal.toFixed(2)} €
   
   Descuento aplicado: ${descuento} %
 
