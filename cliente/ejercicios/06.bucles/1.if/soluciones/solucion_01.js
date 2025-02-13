@@ -11,7 +11,7 @@ Recordemos que un número es par si al dividirlo por 2 da como resto 0.
 // 1. Declaramos variables necesarias (inputs)
 let num = Number.parseInt(prompt("Introduce un número entero para verificar si es par o impar:"));
 let esPar = false; // inicializamos la variable como boolean
-// 2. Realizamos operaciones necesarias
+// 2. Realizamos operaciones y bucles necesarios
 esPar = num % 2 == 0; // determina si el resto de dividir por 2 es 0 
                       // => si true, es par, si false, impar
                       // 4 / 2 = 2 => R = 0 ===> 4 % 2 = 0

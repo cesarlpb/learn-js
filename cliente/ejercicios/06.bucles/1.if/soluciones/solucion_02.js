@@ -10,7 +10,7 @@ El cero se considera positivo.
 
 // 1. Declaramos variables necesarias (inputs)
 let num = Number(prompt("Introduce un número:"));
-// 2. Realizamos operaciones necesarias
+// 2. Realizamos operaciones y bucles necesarios
 // 3. Escribimos el resultado (output)
 if ( num >= 0 ) {
   console.log(`El número ${num} es positivo.`)
