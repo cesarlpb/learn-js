@@ -40,3 +40,11 @@ console.log(`
   Mi Empresa S.L. @ 2025
 
   `)
+
+  // 4. Pruebas
+  // pasar como inputs valores que no aplican descuento como artículos < 10 y
+  // precio menor que 4€ para que no se haga el mínimo -> no aplica dto
+
+  // También, comprobamos caso 10, 4€ -> no aplica dto
+  
+  // caso 11, 4€ -> sí aplica dto
