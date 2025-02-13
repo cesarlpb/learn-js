@@ -8,7 +8,7 @@
 
 // 1. Declaramos variables necesarias (inputs)
 
-// 2. Realizamos operaciones necesarias
+// 2. Realizamos operaciones y bucles necesarios
 
 // 3. Escribimos el resultado (output)
 

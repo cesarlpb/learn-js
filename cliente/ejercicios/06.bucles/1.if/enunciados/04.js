@@ -10,6 +10,6 @@ dará el mensaje de que ha acertado, en caso contrario le dirá que se equivocó
 
 // 1. Declaramos variables necesarias (inputs)
 
-// 2. Realizamos operaciones necesarias
+// 2. Realizamos operaciones y bucles necesarios
 
 // 3. Escribimos el resultado (output)

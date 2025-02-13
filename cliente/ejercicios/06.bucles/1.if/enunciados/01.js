@@ -10,6 +10,6 @@ Recordemos que un número es par si al dividirlo por 2 da como resto 0.
 
 // 1. Declaramos variables necesarias (inputs)
 
-// 2. Realizamos operaciones necesarias
+// 2. Realizamos operaciones y bucles necesarios
 
 // 3. Escribimos el resultado (output)
