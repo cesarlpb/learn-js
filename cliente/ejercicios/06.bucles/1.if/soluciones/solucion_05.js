@@ -27,3 +27,5 @@ console.log(`La diferencia entre ${num1} y ${num2} es ${diferencia}.`)
 // inputs: 1, 0 => 1
 // inputs: 0, 1 => 1
 // inputs: 1, 1 => 0
+
+// Alternativa: usar Math.abs() para calcular el valor absoluto de la diferencia
