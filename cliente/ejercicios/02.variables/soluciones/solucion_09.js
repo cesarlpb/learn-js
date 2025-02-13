@@ -33,6 +33,7 @@ var2 -> 1
 let a = prompt("Introduce el primer valor:");
 let b = prompt("Introduce el segundo valor:") 
 let temp;
+let prevA, prevB; // variables para el test
 // 2. Realizamos operaciones necesarias
 
 // se pide que los valores de a <---> b se intercambien
@@ -41,6 +42,10 @@ let temp;
 console.log("Valores iniciales:");
 console.log("a:", a);
 console.log("b:", b);
+
+// Guardamos los datos para comprobarlos al final:
+prevA = a;
+prevB = b;
 
 temp = b; // guardamos valor de b en temp
 // pasamos el valor de a --> b
@@ -52,3 +57,8 @@ a = temp;
 console.log("Valores finales:");
 console.log("a:", a);
 console.log("b:", b);
+
+// Test o comprobación
+console.log("a tiene el valor esperado?", a === prevB);
+console.log("b tiene el valor esperado?", b === prevA);
+console.log("El programa tiene el resultado correcto?", a === prevB && b === prevA);
