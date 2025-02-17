@@ -23,7 +23,7 @@
 // character => caracter => char en corto => 8 bytes
 let char = prompt("Introduce un caracter para repetir:");
 let input = prompt("Introduce un número mayor de repeticiones que cero:");
-let num = Number.parseInt(input); // convertimos el input numérico a Number
+let num = Number.parseInt(input); // convertimos el input numérico (string) a number
 
 // usamos la comprobación del ej 01 para verificar que el número es entero:
 let esEnteroValido = false;
