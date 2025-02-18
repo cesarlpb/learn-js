@@ -8,7 +8,73 @@
 </head>
 <body>
   <h1>Funciones</h1>
-  
+  <pre><code>
+    function nombre(){
+      // lógica
+  }
+  </code></pre>
+
+  Una función es un bloque de código nombrado que se puede ejecutar cuando sea necesario. Hay varias ventajas al usar funciones:
+  <ul>
+    <li>Evitamos repetir código</li>
+    <li>Organizamos mejor el código</li>
+    <li>Separación de responsabilidades</li>
+  </ul>
+
+  <h2>Ejemplo: sumar()</h2>
+  <ul>
+    <li>Esta función "solo" debería hacer la suma de números</li>
+    <li>Inputs: al menos dos números</li>
+    <li>Output: la suma de los números</li>
+    <li>¿Y si recibe strings? ¿booleans? -> <code>NaN</code></li>
+  </ul>
+
+  <pre><code>
+    // inputs: a y b (number)
+    function sumar(a, b){
+      return a + b; // -> output (number)
+    }
+    let resultado = sumar(1, 2); // 3
+  </code></pre>
+  <script>
+    // inputs: a y b (number)
+    function sumar(a, b){
+      return a + b; // -> output (number)
+    }
+    let resultado = sumar(1, 2); // 3
+  </script>
+
+  <h2>saludo()</h2>
+
+  <pre><code>
+    
+    // Función que no tiene parámetros de entrada ni return
+
+    function saludo(){
+      let nombre = prompt("¿Cómo te llamas?");
+      if(nombre){
+        console.log("Hola,", nombre, "!");  
+      } else{
+        console.log("Hola!");
+      }
+    }
+  </code></pre>
+
+  <p>Variante con <code>return</code>:</p>
+
+  <pre><code>
+    function saludo(){
+      let nombre = prompt("¿Cómo te llamas?");
+      if(nombre){
+        console.log("Hola,", nombre, "!");  
+        return "Hola " + nombre;
+      } else{
+        console.log("Hola!");
+        return "Hola";
+      }
+    }
+  </code></pre>
+
   <!-- Javascript antes de cierre de body -->
   <script src="05.funciones.js"></script>
   <!-- Pon el JS aquí ^ -->
