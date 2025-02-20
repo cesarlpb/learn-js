@@ -125,3 +125,5 @@ console.log("Los test son correctos?", esTestCorrecto ? "✅ Sí" : "❌ No");
 // MCD(0,1) // 1
 // MCD(1,0) // 1
 // MCD(0,0) // 0 <- definición conveniente :)
+
+// Bonus: cálculo del mcm(a, b) -> mcm(10, 20) -> 40
