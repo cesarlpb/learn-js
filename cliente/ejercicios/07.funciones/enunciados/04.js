@@ -1,11 +1,9 @@
-// Ej 02
+// Ej 04
 
-// Esta función se va a llamar esPar(num) y deberá devolver verdadero si el 
-// argumento es par y falso si es impar. 
-// Se acepta que solo se usarán números válidos.
+// Definir una función que cree una cadena de letras repetidas tantas veces como
+//  le digamos. La función recibe dos argumentos: la letra y el número de repeticiones.
 
-// Por ejemplo al llamarla como esPar(5) me dará false, 
-// mientras que con esPar(6) me dará true.
+// Al ejecutar repetir('a', 5) deberá devover la cadena  aaaaa.
 
 /******************************************************************************/
 

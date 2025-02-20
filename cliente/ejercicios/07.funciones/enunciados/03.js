@@ -1,3 +1,12 @@
+// Ej 03
+
+// Función que calcule si un número es múltiplo de otro. 
+// La función recibirá dos 
+// argumentos, el primero será el supuesto mutiplo del segundo argumento.
+
+// Si ejecuto o llamo a la función con esMultiplo(40,4) 
+// debe devolver true porque 40 es divisible por 4. Si ejecutas esMultiplo(23,4) dará false.
+
 /******************************************************************************/
 
 // Pasos para resolver
