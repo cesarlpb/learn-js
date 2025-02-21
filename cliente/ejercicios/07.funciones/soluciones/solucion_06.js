@@ -125,22 +125,42 @@ function main(){
     console.error(`${input} debe ser un entero válido no negativo`).
     return;
   }
+  let tiempo1, tiempo2, tiempo3, tiempo4;
+  let unixTime1 = new Date().getTime();
   
   factorial1 = factorialFor(num);
   
-  factorial2 = factorialWhile(num);
+  let unixTime2 = new Date().getTime();
+  tiempo1 = unixTime2 - unixTime1;
+
+  unixTime1 = new Date().getTime();
   
+  factorial2 = factorialWhile(num);
+
+  unixTime2 = new Date().getTime();
+  tiempo2 = unixTime2 - unixTime1;
+  
+  unixTime1 = new Date().getTime();
+
   factorial3 = factorialRecursion(num);
   
+  unixTime2 = new Date().getTime();
+  tiempo3 = unixTime2 - unixTime1;
+
+  unixTime1 = new Date().getTime();
+
   factorial4 = factorialRecursionBigInt(num);
+
+  unixTime2 = new Date().getTime();
+  tiempo4 = unixTime2 - unixTime1;
 
   let output = `
   Resultados:
   Factorial de ${num}
-  - bucle for:   ${factorial1}
-  - bucle while: ${factorial2}
-  - recursión:   ${factorial3}
-  - BigInt:      ${factorial4}
+  - bucle for:   ${factorial1}, ${tiempo1} ms
+  - bucle while: ${factorial2}, ${tiempo2} ms
+  - recursión:   ${factorial3}, ${tiempo3} ms
+  - BigInt:      ${factorial4}, ${tiempo4} ms
   `
 
   console.log(output);
