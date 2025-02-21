@@ -11,7 +11,7 @@
 // Por ejemplo si le pido siglo(1910) me dirá siglo 20
 
 // function siglo(año){...}
-// function numerosRomanos(decimal){...}
+// function convertirEnRomano(decimal){...}
 
 // ¿output en números decimales o romanos?
 

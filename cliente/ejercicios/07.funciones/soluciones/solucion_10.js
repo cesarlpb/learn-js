@@ -11,7 +11,7 @@
 // Por ejemplo si le pido siglo(1910) me dirá siglo 20
 
 // function siglo(año){...}
-// function numerosRomanos(decimal){...}
+// function convertirEnRomano(decimal){...}
 
 // ¿output en números decimales o romanos?
 
@@ -27,6 +27,9 @@ let input = 0;
 function calcularSiglo(año){
   // Idea: dividimos el año entre 100 y redondeamos al alza
   return Math.ceil(año / 100);
+}
+function convertirEnRomano(siglo){
+  // I, ..., XXI
 }
 function main(){
   input = Number.parseInt(prompt("Introduce el año para calcular siglo:"));
