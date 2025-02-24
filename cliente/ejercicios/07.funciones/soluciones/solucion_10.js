@@ -29,12 +29,62 @@ function calcularSiglo(año){
   return Math.ceil(año / 100);
 }
 function convertirEnRomano(siglo){
-  // I, ..., XXI
+  // I, ..., XXI ->  del 1 al 21
+  
+  // 1 I
+  // 2 II
+  // 3 III
+
+  // 4 IV
+  // 5 V
+  // VI VII VIII 
+
+  // 9 IX y 10 X
+  
+  // 11 XI
+  // ... 19 XIX y 20 XX
+
+  // ... 21 XXI
+
+  if(siglo <= 10){
+    // Idea: colocar bucles for para agrupar 1-3 y/o 5-8
+    switch(siglo){
+      case 1:
+        return "I"
+      case 2:
+        return "II"
+      case 3:
+        return "III"
+      case 4:
+        return "IV"
+      case 5:
+        return "V"
+      case 6: 
+        return "VI"
+      case 7:
+        return "VII"
+      case 8:
+        return "VIII"
+      case 9:
+        return "IX"
+      case 10:
+        return "X"
+    }
+  }else if(siglo > 10 && siglo <= 20){
+      // lo mismo que antes pero añdimos X delante
+      // sabemos que los números son mayores a 10
+      let unidades = siglo - 10;
+      return "X" + convertirEnRomano(unidades);
+  } else if (siglo > 20 && siglo <= 21){
+      let unidades = siglo - 20;
+      return "XX" + convertirEnRomano(unidades);
+  }
 }
 function main(){
   input = Number.parseInt(prompt("Introduce el año para calcular siglo:"));
-  let output = calcularSiglo(input);
-  console.log(`El año ${input} pertenece al siglo ${output}`);
+  let outputDecimal = calcularSiglo(input);
+  let outputRomano = convertirEnRomano(outputDecimal)
+  console.log(`El año ${input} pertenece al siglo ${outputDecimal} (${outputRomano})`);
 }
 // 3. Realizamos operaciones y bucles necesarios -> usando las funciones
 main();
