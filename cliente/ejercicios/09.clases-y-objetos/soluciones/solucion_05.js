@@ -28,27 +28,40 @@
 
 class FichaEntrenamiento {
   constructor(_nombre){
-    this.nombre = _nombre;
-    
+    this.nombre      = _nombre;
     // sesiones -> por defecto 0 km => no negativo
-    
+    this.sesiones    = 0;
     // numSesiones -> número entero positivo de sesiones realizadas por la persona
-
+    this.numSesiones = 0;
     // ¿Cómo validamos que los datos sean correctos?
-
   }
   anotar(km){
     // añade los km entrenados en la sesión a sesiones => ¿renombrar propiedad?
+    // si km no es válido, no añadimos km a sesiones
+    if(!Number.isNaN(km) && Number.isFinite(km) && Number(km) > 0){
+      this.sesiones += Number(km);
+      this.numSesiones++;
+    }
   }
   calcularMedia(){
     // return this.sesiones / this.numSesiones;
+    if(this.numSesiones == 0){
+      console.log("No hay sesiones registradas");
+    } else {
+      // hay que verificar que haya sesiones antes de calcular la división
+      console.log("La media de las sesiones es: ", (this.sesiones / this.numSesiones).toFixed(2), " km");
+    }
     
-    // hay que verificar que haya sesiones antes de calcular la división
   }
 }
 
 // 1. Declaramos variables necesarias (inputs)
-
+// podriamos recibir los datos por prompt
 // 2. Realizamos operaciones y bucles necesarios
-
+let ficha = new FichaEntrenamiento("Pepe"); // sesiones y numSesiones = 0
+ficha.anotar(5);
+ficha.calcularMedia() // 5 km
+ficha.anotar(10);
+ficha.calcularMedia() // 7.5 km
 // 3. Escribimos el resultado (output)
+// console.log() en métodos
