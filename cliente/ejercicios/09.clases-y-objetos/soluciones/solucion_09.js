@@ -38,6 +38,28 @@ Después de hacer factura.pagar() al imprimir factura.estado saldrá "pagada".
 
 // Pasos para resolver
 
+class Cliente{
+  constructor(_idCliente, _nombre, _email, _telefon, _facturas){
+    // asignar
+    console.error("constructor no implementado");
+  }
+  verFacturas(){
+    // imprime con console.log() las facturas y su estado
+    console.error("método no implementado");
+  }
+}
+class Factura{
+  constructor(_idCliente, _importeTotal, _estado){
+    // asignar
+    console.error("constructor no implementado");
+  }
+  cobrar(){
+    console.error("método no implementado");
+  }
+  imprimir(){
+    console.error("método no implementado");
+  }
+}
 // 1. Declaramos variables necesarias (inputs)
 
 // 2. Realizamos operaciones y bucles necesarios

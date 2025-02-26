@@ -38,7 +38,30 @@ El autobús "linea 1" puede llevar 40 pasajeros y su conductor se llama José su
 /******************************************************************************/
 
 // Pasos para resolver
-
+class Bus{
+  constructor(_capacidad, _pasajeros, _conductor){
+    // asignación
+    // capacidad, pasajeros, conductor
+    console.error("constructor no implementado");
+    // asignarConductor()
+  }
+  subirPasajeros(pasajeros){
+    console.error("Método no implementado");
+  }
+  bajarPasajeros(pasajeros){
+    console.error("Método no implementado");
+  }
+  asignarConductor(conductor){
+    console.error("Método no implementado");
+  }
+}
+class Conductor{
+  constructor(_nombre, _licencia){
+    // asignar a propiedades
+    // nombre, licencia
+    console.error("constructor no implementado");
+  }
+}
 // 1. Declaramos variables necesarias (inputs)
 
 // 2. Realizamos operaciones y bucles necesarios

@@ -20,8 +20,15 @@ x4
 
 // Pasos para resolver
 
-// input: índice del array
-// output: el día de la semana
+class Alumno{
+  constructor(_nombre, _matricula, _calificacion){
+    // asignar
+    console.error("constructor no implementado");
+  }
+  calificar(nota){
+    console.error("método no implementado");
+  }
+}
 
 // 1. Declaramos variables necesarias (inputs)
 

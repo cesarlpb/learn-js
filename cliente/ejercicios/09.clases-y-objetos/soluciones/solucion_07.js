@@ -39,6 +39,21 @@ proveedor: Teléfono de TenoShop es 1234567
 
 // Pasos para resolver
 
+class Articulo{
+  constructor(_precio, _nombre, _proveedor){
+    // asignar propiedades
+    console.error("constructor no implementado");
+  }
+  imprimirTelefono(){
+    console.error("método no implementado");
+  }
+}
+class Proveedor{
+  constructor(_nombre, _email, _telefono){
+    // asignar
+    console.error("constructor no implementado");
+  }
+}
 // 1. Declaramos variables necesarias (inputs)
 
 // 2. Realizamos operaciones y bucles necesarios
