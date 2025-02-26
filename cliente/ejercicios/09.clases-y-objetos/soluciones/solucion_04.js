@@ -114,7 +114,16 @@ class CuentaBancaria {
 }
 
 // 1. Declaramos variables necesarias (inputs)
-
+// podemos pedir los datos iniciales por prompt
 // 2. Realizamos operaciones y bucles necesarios
-
+let cuenta = new CuentaBancaria(1, "Ana", "Martínez", "123", "España")
+cuenta.imprimirSaldo(); // 1 €
+cuenta.ingresar(99);
+cuenta.imprimirSaldo(); // 100 €
+cuenta.retirar(50); 
+cuenta.imprimirSaldo(); // 50 €
+cuenta.retirar(51); // no hace nada
+cuenta.retirar(50);
+cuenta.imprimirSaldo(); // 0 €
 // 3. Escribimos el resultado (output)
+// console.log() en imprimirSaldo()
