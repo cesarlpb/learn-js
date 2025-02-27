@@ -21,17 +21,62 @@ x4
 // Pasos para resolver
 
 class Alumno{
-  constructor(_nombre, _matricula, _calificacion){
+  constructor(_nombre, _matricula){
     // asignar
-    console.error("constructor no implementado");
+    // sin validaciones
+    this.nombre = _nombre;
+    this.matricula = _matricula;
+    this.nota = 0;
+    this.calificacion = "";
   }
+  // pasamos la nota numérica a calificación en string
   calificar(nota){
-    console.error("método no implementado");
+    let calificacion = "";
+    if(nota >= 0 && nota < 5){
+      // suspenso
+      calificacion = "Suspenso";
+    } else if(nota >= 5 && nota < 7){
+      // Aprobado
+      calificacion = "Aprobado";
+    } else if(nota >= 7 && nota < 9){
+      // notable
+      calificacion = "Notable";
+    } else if(nota >= 9 && nota <= 10){
+      // sobresaliente
+      calificacion = "Sobresaliente";
+    } else {
+      // no válida
+      calificacion = "Esta nota no es válida";
+    }
+    this.nota = nota;
+    this.calificacion = calificacion;
+  }
+  imprimirNota(){
+    console.log(`${this.nombre} tiene ${this.nota} (${this.calificacion}).`)
   }
 }
 
 // 1. Declaramos variables necesarias (inputs)
-
+const alumnos = [];
+const alumno1 = new Alumno("Juan", "1234");
+const alumno2 = new Alumno("María", "12345");
+const alumno3 = new Alumno("Pepe", "123456");
+const alumno4 = new Alumno("Mario", "1234567");
 // 2. Realizamos operaciones y bucles necesarios
-
+alumnos.push(alumno1); // push() añade el elemento al array en última posición
+alumnos.push(alumno2);
+alumnos.push(alumno3);
+alumnos.push(alumno4);
+// Calficamos:
+alumno1.calificar(5);
+alumno2.calificar(7.5);
+alumno3.calificar(6);
+alumno4.calificar(9);
 // 3. Escribimos el resultado (output)
+for(let i = 0; i < alumnos.length; i++){
+  let alumno = alumnos[i]; // 0, 1, 2, 3
+  alumno.imprimirNota();
+}
+
+// Equivale a:
+// alumno1.imprimirNota() ...
