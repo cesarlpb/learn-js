@@ -32,7 +32,7 @@ Ejemplos:
 -- y el proveedor es TecnoShop, con email: tcn@tecno.com y telefono 1234567.
 
 Si hacemos articulo.imprimirTelefono() nos dará  nombre y teléfono del 
-proveedor: Teléfono de TenoShop es 1234567
+proveedor: Teléfono de TecnoShop es 1234567
 
  */
 /******************************************************************************/
@@ -42,20 +42,27 @@ proveedor: Teléfono de TenoShop es 1234567
 class Articulo{
   constructor(_precio, _nombre, _proveedor){
     // asignar propiedades
-    console.error("constructor no implementado");
+    // sin validaciones -> TODO
+    this.precio = _precio;       // validar que es número positivo
+    this.nombre = _nombre;       // validar que es nombre válido
+    this.proveedor = _proveedor; // validar que es Proveedor válido
   }
   imprimirTelefono(){
-    console.error("método no implementado");
+    console.log(`El teléfono de ${this.proveedor.nombre} es: ${this.proveedor.telefono}.`);
   }
 }
 class Proveedor{
   constructor(_nombre, _email, _telefono){
     // asignar
-    console.error("constructor no implementado");
+    // TODO: validaciones
+    this.nombre = _nombre;    // validar que es nombre válido
+    this.email = _email;      // validar email válido
+    this.telefono = _telefono;// validar teléfono -> España
   }
 }
 // 1. Declaramos variables necesarias (inputs)
-
+let proveedor = new Proveedor("TecnoShop", "tcn@tecno.com", "1234567");
+let articulo  = new Articulo(200, "monitor LG", proveedor);
 // 2. Realizamos operaciones y bucles necesarios
-
+articulo.imprimirTelefono();
 // 3. Escribimos el resultado (output)
