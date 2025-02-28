@@ -52,6 +52,9 @@ class Cliente{
     Cliente.id = nuevoId;
     return nuevoId;
   }
+  static contarCliente(){
+    console.log(`Hay ${Cliente.id} creados en este momento.`)
+  }
   constructor(_nombre, _email, _telefono){
     // asignar
     // sin validaciones
