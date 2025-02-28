@@ -16,23 +16,46 @@
 class Animal{
   constructor(_nombre, _especie){
     // asignar
-    console.error("constructor no implementado");
+    // sin validar
+    this.nombre  = _nombre;
+    this.especie = _especie;
   }
   hacerSonido(){
     // perro -> "guau"
     // gato  -> "miau"
     // etc
+    console.log("Sonido de animal:", this.especie);
+    switch(this.especie){
+      case "perro":
+        console.log("guau");
+        break;
+      case "gato": 
+        console.log("miau");
+        break
+      default:
+        console.log("No hay sonido de este animal");
+    }
   }
 }
-class Perro{
+
+// Herencia
+class Perro extends Animal {
   // ¿cómo evitamos repetir los mismos campos que en Animal
   // y solamente añadimos cosas nuevas o específicas de Perro?
+  constructor(nombre, especie, _raza){
+    super(nombre, especie);
+    this.raza = _raza;
+  }
   hacerSonido(){
-    console.log("guau");
+    console.log(this.nombre, this.especie, this.raza);
+    console.log("El perro hace: guau");
   }
 }
 // 1. Declaramos variables necesarias (inputs)
-
+let animal = new Animal("Pepe", "elefante");
+animal.hacerSonido();
+let perro  = new Perro("Doggy", "perro", "caniche");
+perro.hacerSonido();
 // 2. Realizamos operaciones y bucles necesarios
 
 // 3. Escribimos el resultado (output)
