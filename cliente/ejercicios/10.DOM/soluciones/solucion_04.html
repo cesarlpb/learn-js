@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ej 03</title>
+  <!-- importamos la hoja de estilos -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- contenido del ejercicio -->
+  <h1 id="titular">Hola mundo</h1>
+
+  <div id="subtitulo" style="text-align:center">
+    Este contenido desaparece con el botón borrar
+  </div>
+
+  <section class="botones">
+    <div style="display: flex; justify-content: space-around">
+      <!-- botones -->
+      <!-- Ejercicios 01 y 02 (solo se puede llamar una vez) -->
+      <div onclick="cambiar()" class="boton">Cambiar título</div>
+      <!-- Ejercicio 03: insertar nuevo div (se puede llamar hasta 6 veces) -->
+      <div onclick="crearDiv()" class="boton">Crear bloque</div>
+      <!-- Ejercicio 04: se puede llamar indefinidimente pero solo borra una vez 
+       el elemento -->
+      <div onclick="borrarDiv()" class="boton">Borrar bloque</div>
+      <!-- Variante del ej 04 -->
+      <div onclick="borrarDivPorId()" class="boton">Borrar div dinámico</div>
+    </div>
+  </section>
+  
+  <hr>
+
+  <!-- Elemento para contener (parent) los nuevos divs (children)  -->
+  <div id="contenedor"></div>
+
+  <!-- scripts -->
+  <!-- importamos el script de la solución 04 -->
+  <script src="./solucion_04.js"></script>   
+</body>
+</html>
