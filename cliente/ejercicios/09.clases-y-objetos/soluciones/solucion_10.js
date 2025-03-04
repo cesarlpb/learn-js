@@ -57,5 +57,5 @@ animal.hacerSonido();
 let perro  = new Perro("Doggy", "perro", "caniche");
 perro.hacerSonido();
 // 2. Realizamos operaciones y bucles necesarios
-
+// -> hacer ejemplode Mc Donalds con hamburguesas <-
 // 3. Escribimos el resultado (output)
