@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ej 04</title>
+  <title>Ej 05</title>
   <!-- importamos la hoja de estilos -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -29,14 +29,24 @@
       <div onclick="borrarDivPorId()" class="boton">Borrar div dinámico</div>
     </div>
   </section>
-  
+
   <hr>
+
+  <div class="imagenes">
+    <figure onclick="ponerPie(this)"><img src="https://placehold.co/100x75?text=1" width="100" height="75" alt="Número 1"/>
+      <figcaption></figcaption></figure>
+    <figure onclick="ponerPie(this)"><img src="https://placehold.co/100x75?text=2" width="100" height="75" alt="Número 2"/>
+      <figcaption></figcaption></figure>
+    <figure onclick="ponerPie(this)"><img src="https://placehold.co/100x75?text=3" width="100" height="75" alt="Número 3"/>
+      <figcaption></figcaption></figure>    
+    </div> 
+  </div>
 
   <!-- Elemento para contener (parent) los nuevos divs (children)  -->
   <div id="contenedor"></div>
 
   <!-- scripts -->
-  <!-- importamos el script de la solución 04 -->
-  <script src="./solucion_04.js"></script>   
+  <!-- importamos el script de la solución 05 -->
+  <script src="./solucion_05.js"></script>   
 </body>
 </html>
