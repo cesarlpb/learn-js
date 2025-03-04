@@ -16,6 +16,25 @@ métodos de document para crear nodos.
 
 // Pasos para resolver
 
+/******************************************************************************/
+
+// Añadir interactividad en el documento HTML:
+
+// 1. En el .html > añadir los elementos necesarios para la interactividad 
+// (botones, elementos, contenedores, etc.)
+
+// 1.5. (opcional) En el .html o en el .css > añadir estilos para identificar 
+// fácilmente los elementos editados con JS a continuación 
+
+// 2. En el script o .js > crear las funciones necesarias y conectarlas con eventos
+// o con atributos de evento como "onclick()" -> probar que los eventos hacen 
+// trigger (funcionan) -> Ej: si necesitamos hacer click en un botón y que llame
+// a una fn, ponemos un console.log("...") para verificar
+
+// 3. Creamos la funcionalidad que necesitamos implementar => probamos que 
+// funciona siempre que sea posible
+
+/******************************************************************************/
 
 // 1. Declaramos variables necesarias (inputs)
 const MAX_LLAMADAS_PERMITIDAS = 1;
