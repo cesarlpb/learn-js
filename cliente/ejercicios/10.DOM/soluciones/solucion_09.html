@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ej 09</title>
+  <!-- importamos la hoja de estilos -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- contenido del ejercicio -->
+  <h1 id="titular" onclick="toggleClase()">Hola mundo</h1>
+
+  <!-- aquí va el bloque del ej 08 de intercalar elemento -->
+  
+  <div id="subtitulo" style="text-align:center">
+    Este contenido desaparece con el botón borrar
+  </div>
+
+  <section class="botones">
+    <div style="display: flex; justify-content: space-around">
+      <!-- botones -->
+      <!-- Ejercicios 01 y 02 (solo se puede llamar una vez) -->
+      <div onclick="cambiar()" class="boton">Cambiar título</div>
+      <!-- Ejercicio 03: insertar nuevo div (se puede llamar hasta 6 veces) -->
+      <div onclick="crearDiv()" class="boton">Crear bloque</div>
+      <!-- Ejercicio 04: se puede llamar indefinidimente pero solo borra una vez 
+       el elemento -->
+      <div onclick="borrarDiv()" class="boton">Borrar bloque</div>
+      <!-- Variante del ej 04 -->
+      <div onclick="borrarDivPorId()" class="boton">Borrar div dinámico</div>
+      <!-- Ej 06: mostrar fuentes de img -->
+      <div onclick="fuentesImg()" class="boton">Fuentes</div>
+      <!-- Ej 08: intercalar elemento entre h1 y div#subtitulo -->
+      <div onclick="intercalar()" class="boton">Subtítulo</div>
+    </div>
+  </section>
+
+  <hr>
+
+  <div class="imagenes">
+    <figure onclick="ponerPie(this)"><img src="https://placehold.co/100x75?text=1" width="100" height="75" alt="Número 1"/>
+      <figcaption></figcaption></figure>
+    <figure onclick="ponerPie(this)"><img src="https://placehold.co/100x75?text=2" width="100" height="75" alt="Número 2"/>
+      <figcaption></figcaption></figure>
+    <figure onclick="ponerPie(this)"><img src="https://placehold.co/100x75?text=3" width="100" height="75" alt="Número 3"/>
+      <figcaption></figcaption></figure>    
+    </div> 
+  </div>
+
+  <!-- Elemento para contener (parent) los nuevos divs (children)  -->
+  <div id="contenedor"></div>
+
+  <!-- div para mostrar datos del ej 06: -->
+  <div id="fuentes"></div>
+
+  <!-- Carrusel para el ej 09: -->
+  <div  class="carrusel" data-img="0" onclick="cambiaImg()">
+    <!-- Usamos imágenes de pokemons de PokeAPI de FCC -> 
+     https://pokeapi-proxy.freecodecamp.rocks/ -->
+    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Diapositivas" id="diapo">
+  </div> 
+
+  <!-- scripts -->
+  <!-- importamos el script de la solución 09 -->
+  <script src="./solucion_09.js"></script>   
+</body>
+</html>
