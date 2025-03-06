@@ -13,9 +13,6 @@ Debe cambiar de Hola Mundo a Hola Mundo Javascript
 
 // Pasos para resolver
 
-// input: índice del array
-// output: el día de la semana
-
 // 1. Declaramos variables necesarias (inputs)
 
 // 2. Realizamos operaciones y bucles necesarios
