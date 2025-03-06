@@ -4,17 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ej 03</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
+    <style>
+      input {
+        display: block;
+      }
+      form {
+        display: block;
+        width: 50%;
+        margin: 1em auto;
+        padding: 1em;
+        border-radius: 10px;
+        border: 1px solid rgba(128, 128, 128, 0.35);
+      }
+    </style>
   </head>
   <body>
-    <form>
+    <h2>Calculadora</h2>
+    <form id="form">
+      <label for="precio">Precio (€):</label>
       <input id="precio" type="number" />
-
+      <label for="cantidad">Número de artículos:</label>
       <input id="cantidad" type="number" />
-
-      <input type="button" id="enviar" value="Calcular" />
-
+      <hr>
+      <label for="total">Importe total:</label>
       <input id="total" readonly />
+
+      <div style="display:flex; justify-content:end;">
+        <input type="button" id="enviar" value="Calcular"/>
+      </div>
     </form>
-    <script src="./03.js"></script>
+    <script src="./solucion_03.js"></script>
   </body>
 </html>
