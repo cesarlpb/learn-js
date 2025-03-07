@@ -4,21 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ej 08</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
     <style>
       .oculto {
-        display: none;
+        /* si queremos que salgan en el mismo sitio los divs: */
+        /* display: none;*/
+        /* si queremos que aparezcan uno encima del otro: */
+        visibility: hidden;
       }
       .visible {
         display: block;
       }
+      #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 30%;
+        margin: 0 auto;
+      }
     </style>
   </head>
   <body>
-    <div class="oculto" id="ficha1">Hola, soy el bloque 1</div>
-
-    <div class="oculto" id="ficha2">Hola, soy el bloque 2</div>
-
-    <div class="oculto" id="ficha3">Hola, soy el bloque 3</div>
-    <script src="./08.js"></script>
+    <div id="container">
+      <div class="oculto" id="ficha1">Hola, soy el bloque 1</div>
+      <div class="oculto" id="ficha2">Hola, soy el bloque 2</div>
+      <div class="oculto" id="ficha3">Hola, soy el bloque 3</div>
+    </div>
+    <script src="./solucion_08.js"></script>
   </body>
 </html>
