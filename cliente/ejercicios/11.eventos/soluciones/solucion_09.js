@@ -14,7 +14,14 @@ vertical de la ventana está en window.scrollY
 // Pasos para resolver
 
 // 1. Declaramos variables necesarias (inputs)
-
+const boton = document.getElementById("boton");
+document.addEventListener("scroll", function(event){
+  if(window.scrollY > window.innerHeight - 75){
+    boton.style.display = "block";
+  } else {
+    boton.style.display = "none";
+  }
+});
 // 2. Realizamos operaciones y bucles necesarios
 
 // 3. Escribimos el resultado (output)
