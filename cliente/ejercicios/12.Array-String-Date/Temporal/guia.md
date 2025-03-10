@@ -17,21 +17,28 @@ La API Temporal es un reemplazo moderno para el objeto Date en JavaScript. Resue
 1. **Crear un nuevo directorio para el proyecto:**
 
 ```bash
-mkdir temporal-api
-cd temporal-api
+mkdir prueba
+cd prueba
 ```
 
-Inicializar npm e instalar el polyfill:
+(**Nota:** un `polyfill` en este contexto es una librería que implementa una funcionalidad
+que no está disponible en el navegador/entorno)
+
+2. Inicializar npm e instalar el polyfill:
+
+(**Nota:** `npm` es un gestor de paquetes/librerías)
 
 ```bash
-npm init -y
-npm install @js-temporal/polyfill
+npm init -y # comando para iniciar proyecto con Node y npm
+npm install @js-temporal/polyfill # instalamos el polyfill
 ```
 
 Instalar Snowpack (o tu empaquetador preferido) como dependencia de desarrollo:
 
+(**Nota:** `--save-dev` indica que es una dependencia de desarrollo)
+
 ```bash
-npm install --save-dev snowpack
+npm install --save-dev snowpack # para usar Temporal en navegador
 ```
 
 Crear los archivos del proyecto:
@@ -58,46 +65,49 @@ Crear los archivos del proyecto:
 import { Temporal } from "@js-temporal/polyfill";
 ```
 
+### Obtener la fecha y hora actual en formato ISO
+
 ```javascript
 // Ejemplo: Obtener la fecha y hora actual en formato ISO
 const ahora = Temporal.Now.plainDateTimeISO();
 console.log(ahora.toString());
-Principales Casos de Uso y Ventajas Respecto al Objeto Date
-Temporal.Now
 ```
-Obtener la fecha y hora actual:
+
+### Obtener la fecha y hora actual
 Obtener la fecha y hora completa con precisión:
 
 ```javascript
 const ahora = Temporal.Now.plainDateTimeISO();
 console.log(ahora.toString()); // Ejemplo: 2022-08-15T17:26:43.63340363
 ```
-Obtener la fecha y la hora por separado:
+
+### Obtener la fecha y la hora por separado
 
 ```javascript
 const fechaActual = Temporal.Now.plainDateISO();
 const horaActual = Temporal.Now.plainTimeISO();
 console.log(fechaActual.toString()); // Ejemplo: 2022-08-15
 console.log(horaActual.toString());  // Ejemplo: 17:27:51.688660566
-Temporal.PlainDate y Temporal.ZonedDateTime
+// Temporal.PlainDate y Temporal.ZonedDateTime
 ```
 
-Trabajar con fechas específicas:
+## Trabajar con fechas específicas:
 Crear una fecha simple:
 
 ```javascript
-const fecha = new Temporal.PlainDate(2022, 8, 8);
-console.log(fecha.toString()); // "2022-08-08"
+const fecha = new Temporal.PlainDate(2025, 12, 31);
+console.log(fecha.toString()); // "2022-12-31"
 ```
 
-Crear una fecha a partir de una cadena:
+### Crear una fecha a partir de una cadena:
 
 ```javascript
-const fechaDesdeStr = Temporal.PlainDate.from("2022-08-08");
+const fechaDesdeStr = Temporal.PlainDate.from("2022-12-31");
 console.log(fechaDesdeStr.toString());
 ```
 
-Manejo de zonas horarias de forma sencilla:
+### Manejo de zonas horarias de forma sencilla:
+
 Crear una fecha con zona horaria:
 
 ```javascript
@@ -110,8 +120,10 @@ const fechaZonificada = Temporal.ZonedDateTime.from({
 console.log(fechaZonificada.toString());
 ```
 
-Aritmética de Fechas con Inmutabilidad
-Suma y resta de intervalos:
+### Aritmética de Fechas con Inmutabilidad
+
+Suma y resta de intervalos
+
 Añadir o restar días sin modificar el objeto original:
 
 ```javascript
@@ -121,17 +133,17 @@ const ayer = hoy.subtract({ days: 1 });
 console.log(hoy.toString(), manana.toString(), ayer.toString());
 ```
 
-Cálculo de duración entre fechas:
+### Cálculo de duración entre fechas:
 Calcular la duración entre dos fechas:
 
 ```javascript
 const fecha1 = Temporal.Now.plainDateISO();
 const fecha2 = new Temporal.PlainDate(2022, 1, 1);
 console.log(fecha1.since(fecha2).toString()); // Ejemplo: "P226D"
-Temporal.Duration
+// Temporal.Duration
 ```
 
-Representación de períodos de tiempo:
+## Representación de períodos de tiempo:
 Crear y manipular duraciones:
 
 ```javascript
@@ -144,10 +156,10 @@ Calcular duración total en una unidad específica:
 ```javascript
 const duracionMinutos = Temporal.Duration.from({ hours: 12, minutes: 30 });
 console.log(duracionMinutos.total("minutes")); // Ejemplo: 750
-Temporal.TimeZone
+// Temporal.TimeZone
 ```
 
-Manejo de zonas horarias:
+### Manejo de zonas horarias:
 Especificar una zona horaria concreta:
 
 ```javascript
@@ -155,53 +167,69 @@ const zonaHoraria = Temporal.TimeZone.from("America/Chicago");
 console.log(zonaHoraria.toString()); // "America/Chicago"
 ```
 
-Obtener la zona horaria local:
+#### Obtener la zona horaria local:
 
 ```javascript
 const zonaLocal = Temporal.Now.timeZone();
-console.log(zonaLocal.toString()); // Ejemplo: "Asia/Karachi"
+console.log(zonaLocal.toString()); // Ejemplo: "Europe/Madrid" -> saldrá alguno de Europe/...
 ```
 
 ## Características Avanzadas de la API Temporal
-Soporte para calendarios no gregorianos:
-Permite trabajar con diferentes calendarios culturales usando el objeto Temporal.Calendar.
 
-Precisión con Temporal.Instant:
+- Soporte para calendarios no gregorianos:
+
+Permite trabajar con diferentes calendarios culturales usando el objeto `Temporal.Calendar`.
+
+- Precisión con `Temporal.Instant`:
+
 Trabaja con marcas de tiempo precisas hasta nanosegundos, ideal para aplicaciones que requieren alta precisión, como el registro de eventos o datos en tiempo real.
 
-Manejo robusto de zonas horarias con Temporal.ZonedDateTime:
+- Manejo robusto de zonas horarias con `Temporal.ZonedDateTime`:
+
 Permite convertir fechas y horas entre diferentes zonas horarias de manera sencilla, lo que resulta esencial para aplicaciones globales.
 
-Métodos auxiliares para operaciones con fechas:
+- Métodos auxiliares para operaciones con fechas:
+
 Métodos como with, add, subtract, since y until simplifican la aritmética de fechas y garantizan inmutabilidad.
 
 ## ¿Por Qué Temporal es Mejor que Date?
-Diseño Moderno de la API:
+
+- Diseño Moderno de la API:
+
 Temporal ofrece una API más limpia e intuitiva para la gestión de fechas y horas.
 
-Inmutabilidad:
+- Inmutabilidad:
+
 Las operaciones no modifican el objeto original, lo que reduce la posibilidad de errores y efectos secundarios.
 
-Manejo Integral de Zonas Horarias:
-A diferencia de Date, Temporal tiene soporte nativo para zonas horarias, lo que simplifica el desarrollo de aplicaciones internacionales.
+- Manejo Integral de Zonas Horarias:
 
-Parseo Estricto ISO 8601:
-Temporal evita las inconsistencias del objeto Date al usar un formato estricto, eliminando errores comunes en el parseo de fechas.
+A diferencia de `Date`, `Temporal` tiene soporte nativo para zonas horarias, lo que simplifica el desarrollo de aplicaciones internacionales.
 
-Operaciones de Aritmética de Fechas:
-Sumar, restar y comparar fechas es más sencillo y confiable con Temporal.
+- Parseo Estricto ISO 8601:
 
-Recomendaciones
-Utiliza Temporal en Nuevos Proyectos:
+`Temporal` evita las inconsistencias del objeto `Date` al usar un formato estricto, eliminando errores comunes en el parseo de fechas.
+
+- Operaciones de Aritmética de Fechas:
+
+Sumar, restar y comparar fechas es más sencillo y confiable con `Temporal`.
+
+## Recomendaciones
+
+- Utiliza `Temporal` en Nuevos Proyectos:
+
 Si necesitas manejar fechas y horas de forma robusta y precisa, especialmente con conversiones de zonas horarias o cálculos complejos, Temporal es la opción ideal.
 
-Emplea el Polyfill Hasta que el Soporte Nativo sea Generalizado:
-Temporal se encuentra en fase experimental (Stage 3) y aún no es soportado por todos los navegadores. Utiliza @js-temporal/polyfill para comenzar a trabajar con la API de inmediato.
+- Emplea el Polyfill Hasta que el Soporte Nativo sea Generalizado:
 
-Explora la Documentación:
+`Temporal` se encuentra en fase experimental (Stage 3) y aún no es soportado por todos los navegadores. Utiliza @js-temporal/polyfill para comenzar a trabajar con la API de inmediato.
+
+- Explora la Documentación:
+
 Familiarízate con los distintos tipos de datos y métodos que ofrece Temporal para aprovechar al máximo sus capacidades.
 
-Piensa en la Evolución del Proyecto:
+- Piensa en la Evolución del Proyecto:
+
 Adoptar Temporal ahora te ayudará a reducir la deuda técnica y a estar preparado para el futuro, cuando se convierta en parte del estándar ECMAScript.
 
 ## Referencias
