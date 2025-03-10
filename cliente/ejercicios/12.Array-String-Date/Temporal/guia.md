@@ -204,3 +204,7 @@ Familiarízate con los distintos tipos de datos y métodos que ofrece Temporal p
 Piensa en la Evolución del Proyecto:
 Adoptar Temporal ahora te ayudará a reducir la deuda técnica y a estar preparado para el futuro, cuando se convierta en parte del estándar ECMAScript.
 
+## Referencias
+
+- [Post sobre Temporal API (inglés)](https://refine.dev/blog/temporal-date-api/)
+- [Documentación de Temporal en MDN (solo inglés por el momento)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Temporal)
