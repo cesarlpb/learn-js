@@ -1,0 +1,21 @@
+{
+  "name": "prueba",
+  "version": "1.0.0",
+  "description": "Probamos API de Temporal",
+  "main": "index.js",
+  "scripts": {
+    "decirHola": "node -e \"console.log('Digo hola')\"",
+    "decirHolaIndex": "node index.js"
+  },
+  "keywords": [
+    "Temporal"
+  ],
+  "author": "César P.",
+  "license": "ISC",
+  "dependencies": {
+    "@js-temporal/polyfill": "^0.4.4"
+  },
+  "devDependencies": {
+    "snowpack": "^3.8.8"
+  }
+}
