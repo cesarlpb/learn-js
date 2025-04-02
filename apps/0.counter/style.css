@@ -1,0 +1,37 @@
+body {
+    background-color:aquamarine;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#display {
+    font-size: 2.5em;
+    margin: 1em;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#increment-btn, #decrement-btn, #reset-btn {
+    background-color: #3b82f6;
+    color: #e5e7eb;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+#reset-btn {
+    background-color: red;
+    color: white;
+}
+#increment-btn:hover, #decrement-btn:hover, #reset-btn:hover {
+    background-color: #2563eb;
+    transform: scale(1.05);
+}
+#increment-btn:active, #decrement-btn:active, #reset-btn:active {
+    background-color: #2563eb;
+    transform: scale(0.95);
+}
