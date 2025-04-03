@@ -40,10 +40,14 @@ class Todo {
 
     }
     static getAll(){
-
+        // Leer del localStorage
+        // return del array
+        return JSON.parse(localStorage.getItem("todos"));
     }
     static getOne(id){
-
+        // return de un elemento si existe por id
+        return JSON.parse(localStorage.getItem("todos")).
+        filter(todo => todo.id == id);
     }
 }
 // Cambiar el comportamiento por defecto del form 
@@ -55,6 +59,35 @@ form.addEventListener("submit", function(e){
     const description = document.getElementById("description").value;
     const date = document.getElementById("date").value;
     // console.log de los datos
-    console.log(title, description, date);
+    console.log(title, description, date); // debug
+    const newTodo = new Todo(title, description, date) // autosave en localStorage
 })
+
+// Cards
+// Necesitamos la lista de todos:
+const todos = Todo.getAll()
+// Conseguimos el div para colocar la lista de cards:
+const container = document.querySelector("#lista");
+if(todos.length > 0){
+    // Quitamos el texto por defecto:
+    container.innerHTML = "";
+    // Bucle para añadir cards:
+    todos.forEach(({ id, title, description, date }) => {
+        // const { id, title, description, date } = el
+        const html = `
+            <article class="card">
+                <div>
+                    <button>🗙</button>
+                </div>
+                <a href="todos.html?id=${id}">
+                    <h3 class="card-title"><span>${id}</span> - ${title}</h3>
+                </a>
+                <p class="card-description">${description}</p>
+                <p class="card-date">${date}</p>
+            </article>
+            `; 
+        container.innerHTML += html;
+    });
+    
+}
 

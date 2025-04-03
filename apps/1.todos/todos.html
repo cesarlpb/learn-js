@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+</head>
+<body>
+    <h2 id="id"></h2>
+    <script>
+        const params = new URLSearchParams(window.location.search)
+        const id = params.get("id");
+        document.getElementById("id").innerText = id;
+    </script>
+</body>
+</html>

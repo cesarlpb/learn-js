@@ -30,3 +30,45 @@ form div {
 #submit-container {
     text-align: right;
 }
+/* Usamos selectores anidados */
+#lista {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: min(60vw, 400px);
+    min-width: 350px;
+    align-items: center;
+    margin: 0 auto;
+    gap: 1.5em;
+}
+.card {
+    display: inline-block;
+    background-color: oklch(82.8% 0.189 84.429);
+    max-width: min(60vw, 300px);
+    min-width: 300px;
+    padding: 1em;
+    border-radius: 0.75em;
+
+    & h3 {
+        font-size: 2em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    & div:first-of-type {
+        width: 100%;
+        text-align: right;
+    }
+}
+/* .card-id{
+
+} */
+.card-title{
+    text-decoration: underline;
+}
+.card-description{
+
+}
+.card-date{
+    text-align: right;
+    color: oklch(44.6% 0.03 256.802);
+}
