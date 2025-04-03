@@ -14,8 +14,18 @@ form label {
     display: block;
     font-weight: 500;
 }
-form input {
+form input, form textarea {
     display: inline-block;
+    width: 100%;
+    /* Colocamos border-box para que no desborden 
+    los elementos de sus parents */
+    box-sizing: border-box;
+}
+form textarea {
+    margin: 0;
+}
+form div {
+    margin-bottom: 1em;
 }
 #submit-container {
     text-align: right;
