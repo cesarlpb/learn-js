@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <!-- 
+                Inicio/Lista - / o todos/ 
+                Detalle en: /id o todos/id 
+            -->
+            <ul>
+                <li><a href="">Inicio</a></li>
+            </ul>
+        </nav>
+
+        <h1>Mis ToDos</h1>
+        <form>
+            <div>
+            <label for="title">Título:</label>
+            <input id="title" name="title" type="text" placeholder="¿Qué tienes que hacer?">
+            </div>
+
+            <div>
+                <label for="description">Descripción:</label>
+                <textarea name="description" id="description">
+Más detalle...
+                </textarea>
+            </div>
+
+            <div>
+                <label for="date">Fecha:</label>
+                <input type="date" name="date" id="date">
+            </div>
+
+            <div id="submit-container">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+
+        <div id="lista">No hay todos creados aún.</div>
+    </div>
+</body>
+</html>

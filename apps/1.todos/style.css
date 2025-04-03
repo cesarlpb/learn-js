@@ -1,0 +1,22 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+form {
+    display: inline-block;
+    margin: 1em auto;
+    /* Se auto selecciona el mínimo de los valores: */
+    max-width: min(60vw, 400px);
+    min-width: 350px;
+}
+form label {
+    display: block;
+    font-weight: 500;
+}
+form input {
+    display: inline-block;
+}
+#submit-container {
+    text-align: right;
+}
