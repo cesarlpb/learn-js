@@ -1,16 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo App</title>
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h2 id="id"></h2>
+    <div id="container">
+        <nav>
+            <!-- 
+                Inicio/Lista - / o todos/ 
+                Detalle en: /id o todos/id 
+            -->
+            <ul>
+                <li><a href="index.html"><span>🏠</span> <span>Inicio</span></a></li>
+            </ul>
+        </nav>
+
+        <h1>Todo #<span class="id"></span></h1>
+
+        <div id="todo">
+            <p>No hay un todo con el id <span class="id"></span>.</p>
+        </div>
+    </div>
+    <!-- Importamos script con clase Todo primero (🚨 importante): -->
+    <script src="todo.js"></script>
+
+    <!-- importamos script general -->
+    <script src="script.js"></script>
+
+    <!-- script con lógica para leer el id de url param, buscar el todo
+     y colocarlo en #todo: -->
     <script>
         const params = new URLSearchParams(window.location.search)
         const id = params.get("id");
-        document.getElementById("id").innerText = id;
+        Array.from(document.querySelectorAll(".id")).forEach(el => el.innerText = id)
+        const todo = Todo.getOne(id);
+        if(todo[0]){
+            const { id, title, description, date } = todo[0];
+            const html = `
+            <article class="card" data-id="${id}">
+                <div>
+                    <button onclick="borrarCard(this)">🗙</button>
+                </div>
+                <a href="todos.html?id=${id}">
+                    <h3 class="card-title"><span>${id}</span> - ${title}</h3>
+                </a>
+                <p class="card-description">${description}</p>
+                <p class="card-date">${date}</p>
+            </article>
+            `; 
+            document.getElementById("todo").innerHTML = html;
+        }
     </script>
 </body>
+
 </html>

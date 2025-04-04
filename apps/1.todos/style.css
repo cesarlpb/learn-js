@@ -19,7 +19,7 @@ nav > ul {
     & li {
         padding-left: 0;
     }
-    & a {
+    & a > span:last-of-type {
         text-decoration: underline;
         font-weight: 500;
     }
@@ -45,7 +45,7 @@ form div {
     text-align: right;
 }
 /* Usamos selectores anidados */
-#lista {
+#lista, #todo {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -69,8 +69,9 @@ form div {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     & div:first-of-type {
+        display: flex;
         width: 100%;
-        text-align: right;
+        justify-content: space-between;
     }
 }
 /* .card-id{
@@ -79,9 +80,9 @@ form div {
 .card-title{
     text-decoration: underline;
 }
-.card-description{
+/* .card-description{
 
-}
+} */
 .card-date{
     text-align: right;
     color: oklch(44.6% 0.03 256.802);
