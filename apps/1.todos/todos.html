@@ -46,7 +46,8 @@
             const html = `
             <article class="card" data-id="${id}">
                 <div>
-                    <button onclick="borrarCard(this)">🗙</button>
+                    <button onclick="editCard(this)">✏️ Editar</button>
+                    <button onclick="borrarCard(this)">Borrar 🗙</button>
                 </div>
                 <a href="todos.html?id=${id}">
                     <h3 class="card-title"><span>${id}</span> - ${title}</h3>
