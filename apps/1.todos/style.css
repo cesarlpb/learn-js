@@ -3,12 +3,26 @@
     flex-direction: column;
     justify-content: center;
 }
-form {
+h1 {
+    text-align: center;
+}
+nav, form {
     display: inline-block;
     margin: 1em auto;
     /* Se auto selecciona el mínimo de los valores: */
     max-width: min(60vw, 400px);
     min-width: 350px;
+}
+nav > ul {
+    list-style: none;
+    padding-left: 0;
+    & li {
+        padding-left: 0;
+    }
+    & a {
+        text-decoration: underline;
+        font-weight: 500;
+    }
 }
 form label {
     display: block;

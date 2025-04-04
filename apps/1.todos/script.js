@@ -61,14 +61,18 @@ form.addEventListener("submit", function(e){
     // console.log de los datos
     console.log(title, description, date); // debug
     const newTodo = new Todo(title, description, date) // autosave en localStorage
-})
+    /* para que se actualice la lista podemos añadir lógica aquí o 
+    "simplemente" recargar la web para que se carguen los todos en cards y 
+    se borren los campos del form */
+    window.location.reload();
+});
 
 // Cards
 // Necesitamos la lista de todos:
 const todos = Todo.getAll()
 // Conseguimos el div para colocar la lista de cards:
 const container = document.querySelector("#lista");
-if(todos.length > 0){
+if(todos?.length > 0){
     // Quitamos el texto por defecto:
     container.innerHTML = "";
     // Bucle para añadir cards:
